@@ -4,131 +4,895 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shaillesh Tannu — Engineering Leader | Financial Infrastructure</title>
-<meta name="description" content="Engineering leader with 18+ years in engineering, 10+ across payments, fintech, and crypto.">
+<meta name="description" content="Engineering leader with 18+ years in engineering, 10+ across payments, fintech, and crypto. Building financial systems where every dollar must be accurate, auditable, and compliant.">
 <meta property="og:title" content="Shaillesh Tannu — Engineering Leader">
 <meta property="og:description" content="I build financial systems where every dollar must be accurate, auditable, and compliant.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shailleshtannu.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cb-blue:#1652F0;--cb-blue-light:#4B7BF5;--cb-blue-dark:#0D3FBF;--cb-blue-glow:rgba(22,82,240,0.12);--cb-blue-subtle:rgba(22,82,240,0.06);--dark-bg:#060A10;--dark-surface:#0B0F18;--dark-card:#10151F;--dark-border:rgba(255,255,255,0.06);--text-primary:#E8ECF2;--text-secondary:rgba(232,236,242,0.65);--text-muted:rgba(232,236,242,0.38)}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--dark-bg);color:var(--text-primary);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+:root {
+  --cb-blue: #1652F0;
+  --cb-blue-light: #4B7BF5;
+  --cb-blue-dark: #0D3FBF;
+  --cb-blue-glow: rgba(22, 82, 240, 0.12);
+  --cb-blue-subtle: rgba(22, 82, 240, 0.06);
+  --dark-bg: #060A10;
+  --dark-surface: #0B0F18;
+  --dark-card: #10151F;
+  --dark-border: rgba(255,255,255,0.06);
+  --text-primary: #E8ECF2;
+  --text-secondary: rgba(232,236,242,0.65);
+  --text-muted: rgba(232,236,242,0.38);
+}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 48px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(6,10,16,0.85);border-bottom:1px solid var(--dark-border);transition:background .3s}
-.nav-brand{font-family:'IBM Plex Serif',Georgia,serif;font-size:18px;font-weight:600;color:var(--text-primary);text-decoration:none}
-.nav-links{display:flex;gap:28px;list-style:none}
-.nav-links a{color:var(--text-muted);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .3s}
-.nav-links a:hover{color:var(--cb-blue-light)}
-.nav-mobile{display:none;background:none;border:none;color:var(--text-primary);font-size:24px;cursor:pointer}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-.hero{min-height:100vh;display:flex;align-items:center;padding:140px 80px 100px;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;pointer-events:none;z-index:0}
-.hero-bg::before{content:'';position:absolute;width:700px;height:700px;background:radial-gradient(circle,var(--cb-blue-glow) 0%,transparent 65%);top:-250px;right:-150px}
-.hero-bg::after{content:'';position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(0,210,150,0.03) 0%,transparent 65%);bottom:-150px;left:-100px}
-.hero-content{max-width:780px;position:relative;z-index:1}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--cb-blue-subtle);border:1px solid rgba(22,82,240,0.12);border-radius:100px;padding:8px 20px;font-size:12px;font-weight:600;color:var(--cb-blue-light);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:36px}
-.hero-tag::before{content:'';width:6px;height:6px;background:var(--cb-blue-light);border-radius:50%;animation:pulse 2.5s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-.hero h1{font-family:'IBM Plex Serif',Georgia,serif;font-size:clamp(36px,5vw,62px);font-weight:700;line-height:1.12;margin-bottom:28px;letter-spacing:-1px}
-.hero h1 .hl{color:var(--cb-blue-light)}
-.hero-sub{font-size:17px;color:var(--text-secondary);max-width:620px;line-height:1.75;margin-bottom:56px}
-.hero-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
-.metric{border-left:2px solid var(--cb-blue);padding-left:18px}
-.metric-value{font-family:'IBM Plex Serif',Georgia,serif;font-size:26px;font-weight:700;line-height:1.2}
-.metric-label{font-size:13px;color:var(--text-muted);font-weight:500;margin-top:4px}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
 
-section{padding:110px 80px;position:relative}
-.s-label{font-size:11px;font-weight:700;color:var(--cb-blue-light);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:14px}
-.s-title{font-family:'IBM Plex Serif',Georgia,serif;font-size:clamp(26px,3.2vw,40px);font-weight:700;line-height:1.2;margin-bottom:20px;letter-spacing:-.5px}
-.s-hook{font-size:16.5px;color:var(--text-secondary);max-width:680px;line-height:1.75;margin-bottom:48px}
-.s-div{width:48px;height:3px;background:linear-gradient(90deg,var(--cb-blue),var(--cb-blue-light));border-radius:2px;margin-bottom:20px}
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-.about-content{max-width:680px}
-.about-content p{font-size:16.5px;color:var(--text-secondary);margin-bottom:22px;line-height:1.8}
-.about-content strong{color:var(--text-primary);font-weight:600}
-.about-callout{margin-top:36px;padding:24px 28px;background:var(--cb-blue-subtle);border-left:3px solid var(--cb-blue);border-radius:0 12px 12px 0;font-size:16px;color:var(--text-secondary);line-height:1.7;font-style:italic}
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: rgba(6,10,16,0.85);
+  border-bottom: 1px solid var(--dark-border);
+  transition: all 0.3s ease;
+}
 
-.exp-grid{display:grid;gap:28px;max-width:860px}
-.exp-card{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:14px;padding:36px;transition:border-color .3s,box-shadow .3s}
-.exp-card:hover{border-color:rgba(22,82,240,.18);box-shadow:0 8px 48px rgba(22,82,240,.05)}
-.exp-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;flex-wrap:wrap;gap:8px}
-.exp-role{font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:600;line-height:1.3}
-.exp-period{font-size:13px;color:var(--text-muted);font-weight:500;white-space:nowrap}
-.exp-company{font-size:14px;color:var(--cb-blue-light);font-weight:600;margin-bottom:14px}
-.exp-purpose{font-size:14.5px;color:var(--text-secondary);font-style:italic;margin-bottom:22px;padding-left:14px;border-left:2px solid rgba(22,82,240,.25);line-height:1.6}
-.exp-highlights{display:grid;gap:14px}
-.exp-hl{font-size:15px;color:var(--text-secondary);line-height:1.7;padding-left:22px;position:relative}
-.exp-hl::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--cb-blue);border-radius:50%}
-.exp-hl strong{color:var(--text-primary);font-weight:600}
-.exp-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding-top:22px;border-top:1px solid var(--dark-border)}
-.exp-tag{background:var(--cb-blue-subtle);border:1px solid rgba(22,82,240,.08);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--cb-blue-light)}
+.nav-brand {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
 
-.earlier{display:grid;gap:0;max-width:860px;margin-top:40px}
-.earlier-label{font-size:13px;font-weight:700;color:var(--text-muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
-.e-role{display:flex;justify-content:space-between;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--dark-border);flex-wrap:wrap;gap:6px}
-.e-role:first-of-type{border-top:1px solid var(--dark-border)}
-.e-info{display:flex;flex-direction:column;gap:3px}
-.e-title{font-size:15px;font-weight:600}
-.e-co{font-size:13.5px;color:var(--text-secondary)}
-.e-detail{font-size:13px;color:var(--text-muted);margin-top:2px;line-height:1.5}
-.e-period{font-size:13px;color:var(--text-muted);font-weight:500;white-space:nowrap}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
 
-.brief-section{background:var(--dark-surface);border-top:1px solid var(--dark-border);border-bottom:1px solid var(--dark-border)}
-.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:860px}
-.case{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:14px;padding:30px;transition:border-color .3s,transform .2s}
-.case:hover{border-color:rgba(22,82,240,.18);transform:translateY(-2px)}
-.case-num{font-size:11px;font-weight:700;color:var(--cb-blue-light);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
-.case-title{font-family:'IBM Plex Serif',Georgia,serif;font-size:17px;font-weight:600;line-height:1.4;margin-bottom:12px}
-.case-desc{font-size:14px;color:var(--text-secondary);line-height:1.7}
-.brief-cta{margin-top:40px;max-width:860px}
-.brief-box{background:linear-gradient(135deg,rgba(22,82,240,.08) 0%,rgba(22,82,240,.02) 100%);border:1px solid rgba(22,82,240,.12);border-radius:14px;padding:32px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
-.brief-box h3{font-family:'IBM Plex Serif',Georgia,serif;font-size:18px;font-weight:600;margin-bottom:6px}
-.brief-box p{font-size:14px;color:var(--text-secondary);line-height:1.6}
-.brief-box-text{max-width:480px}
-.btn-req{display:inline-flex;align-items:center;gap:8px;background:var(--cb-blue);color:#fff;border:none;border-radius:10px;padding:14px 28px;font-family:'IBM Plex Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .3s,transform .15s;white-space:nowrap}
-.btn-req:hover{background:var(--cb-blue-light);transform:translateY(-1px)}
-.btn-req svg{width:16px;height:16px;fill:currentColor}
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s;
+}
 
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:860px}
-.sk-group{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:14px;padding:28px}
-.sk-title{font-family:'IBM Plex Serif',Georgia,serif;font-size:14px;font-weight:600;color:var(--cb-blue-light);margin-bottom:18px}
-.sk-item{font-size:14px;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(255,255,255,.03);line-height:1.5}
-.sk-item:last-child{border-bottom:none}
+.nav-links a:hover { color: var(--cb-blue-light); }
 
-.docs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:520px}
-.doc{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:14px;padding:28px;text-decoration:none;transition:border-color .3s,transform .2s;display:flex;flex-direction:column;gap:14px}
-.doc:hover{border-color:rgba(22,82,240,.25);transform:translateY(-2px)}
-.doc-icon{width:44px;height:44px;background:var(--cb-blue-subtle);border:1px solid rgba(22,82,240,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
-.doc-title{font-family:'IBM Plex Serif',Georgia,serif;font-size:16px;font-weight:600;color:var(--text-primary)}
-.doc-desc{font-size:13.5px;color:var(--text-muted);line-height:1.55}
-.doc-arrow{font-size:13px;color:var(--cb-blue-light);font-weight:600;margin-top:auto}
+.nav-mobile {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 24px;
+  cursor: pointer;
+}
 
-.contact-section{background:var(--dark-surface);border-top:1px solid var(--dark-border);text-align:center}
-.contact-links{display:flex;justify-content:center;gap:16px;margin-top:36px;flex-wrap:wrap}
-.c-link{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:10px;padding:13px 26px;color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:all .3s}
-.c-link:hover{border-color:var(--cb-blue);color:var(--cb-blue-light);background:var(--cb-blue-subtle)}
-.c-link.primary{background:var(--cb-blue);border-color:var(--cb-blue);color:#fff}
-.c-link.primary:hover{background:var(--cb-blue-light);border-color:var(--cb-blue-light)}
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 80px 80px;
+  position: relative;
+  overflow: hidden;
+}
 
-footer{padding:36px 80px;text-align:center;font-size:13px;color:var(--text-muted);border-top:1px solid var(--dark-border)}
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--cb-blue-glow) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+  pointer-events: none;
+}
 
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
-.fade-in.visible{opacity:1;transform:translateY(0)}
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,210,150,0.04) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+  pointer-events: none;
+}
 
-@media(max-width:900px){.cases{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}.hero-metrics{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){nav{padding:14px 24px}.nav-links{display:none}.nav-mobile{display:block}.hero{padding:110px 24px 60px}section{padding:70px 24px}.docs-grid{grid-template-columns:1fr}.exp-header{flex-direction:column}.brief-box{flex-direction:column;align-items:flex-start}footer{padding:32px 24px}}
-@media(max-width:480px){.hero-metrics{grid-template-columns:1fr 1fr;gap:20px}.metric-value{font-size:22px}.contact-links{flex-direction:column;align-items:center}}
-.nav-links.show{display:flex!important;position:fixed;top:56px;left:0;right:0;flex-direction:column;background:rgba(6,10,16,.98);padding:24px;gap:20px;border-bottom:1px solid var(--dark-border)}
+.hero-content {
+  max-width: 820px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cb-blue-subtle);
+  border: 1px solid rgba(22, 82, 240, 0.15);
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cb-blue-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--cb-blue-light);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: clamp(40px, 5.5vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  letter-spacing: -1.2px;
+}
+
+.hero h1 .highlight {
+  color: var(--cb-blue-light);
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+/* Proof strip - 8 metrics in 2 rows */
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  background: rgba(255,255,255,0.01);
+}
+
+.proof-cell {
+  padding: 20px 22px;
+  border-right: 1px solid var(--dark-border);
+}
+
+.proof-cell:nth-child(4n) { border-right: none; }
+.proof-cell:nth-child(n+5) { border-top: 1px solid var(--dark-border); }
+
+.proof-value {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+
+.proof-value .accent { color: var(--cb-blue-light); }
+
+.proof-label {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 100px 80px;
+  position: relative;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cb-blue-light);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.6px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cb-blue), var(--cb-blue-light));
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+.section-hook {
+  font-size: 16.5px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+/* ===== ABOUT ===== */
+.about-content {
+  max-width: 720px;
+}
+
+.about-content p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about-callout {
+  margin-top: 36px;
+  padding: 24px 28px;
+  background: var(--cb-blue-subtle);
+  border-left: 3px solid var(--cb-blue);
+  border-radius: 0 12px 12px 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ===== HOW I WORK ===== */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1080px;
+}
+
+.principle {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 30px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.principle:hover {
+  border-color: rgba(22, 82, 240, 0.18);
+  transform: translateY(-2px);
+}
+
+.principle-num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cb-blue-light);
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.principle-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+
+.principle-body {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.principle-body p { margin-bottom: 12px; }
+.principle-body p:last-child { margin-bottom: 0; }
+.principle-body strong { color: var(--text-primary); font-weight: 600; }
+
+/* ===== SIGNATURE WINS ===== */
+.wins-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.wins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+}
+
+.win-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.win-card:hover {
+  border-color: rgba(22, 82, 240, 0.18);
+  transform: translateY(-2px);
+}
+
+.win-headline {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cb-blue-light);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.win-subhead {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.win-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience-grid {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
+}
+
+.exp-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 36px;
+  position: relative;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+  border-color: rgba(22, 82, 240, 0.2);
+  box-shadow: 0 8px 40px rgba(22, 82, 240, 0.06);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-role {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.exp-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-size: 14px;
+  color: var(--cb-blue-light);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.exp-purpose {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 22px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(22, 82, 240, 0.25);
+  line-height: 1.6;
+}
+
+.exp-highlights {
+  display: grid;
+  gap: 14px;
+}
+
+.exp-highlight {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding-left: 22px;
+  position: relative;
+}
+
+.exp-highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: var(--cb-blue);
+  border-radius: 50%;
+}
+
+.exp-highlight strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.exp-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--dark-border);
+}
+
+.exp-metric-tag {
+  background: var(--cb-blue-subtle);
+  border: 1px solid rgba(22, 82, 240, 0.08);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cb-blue-light);
+}
+
+/* ===== EARLIER CAREER ===== */
+.earlier-roles {
+  display: grid;
+  gap: 0;
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.earlier-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.earlier-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--dark-border);
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.earlier-role:first-of-type {
+  border-top: 1px solid var(--dark-border);
+}
+
+.earlier-role-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.earlier-role-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.earlier-role-company {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.earlier-role-detail {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.earlier-role-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== LEADERSHIP BRIEF ===== */
+.brief-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.case-studies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.case-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 30px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.case-card:hover {
+  border-color: rgba(22, 82, 240, 0.18);
+  transform: translateY(-2px);
+}
+
+.case-number {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cb-blue-light);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.case-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.case-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.brief-cta {
+  margin-top: 40px;
+  max-width: 900px;
+}
+
+.brief-box {
+  background: linear-gradient(135deg, rgba(22, 82, 240, 0.08) 0%, rgba(22, 82, 240, 0.02) 100%);
+  border: 1px solid rgba(22, 82, 240, 0.12);
+  border-radius: 14px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brief-box h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.brief-box p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.brief-box-text {
+  max-width: 480px;
+}
+
+.btn-req {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cb-blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.btn-req:hover {
+  background: var(--cb-blue-light);
+  transform: translateY(-1px);
+}
+
+.btn-req svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.skill-group {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.skill-group-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cb-blue-light);
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+.skill-item {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  line-height: 1.5;
+}
+
+.skill-item:last-child { border-bottom: none; }
+
+/* ===== DOCUMENTS ===== */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+}
+
+.doc-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color 0.3s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.doc-card:hover {
+  border-color: rgba(22, 82, 240, 0.25);
+  transform: translateY(-2px);
+}
+
+.doc-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--cb-blue-subtle);
+  border: 1px solid rgba(22, 82, 240, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.doc-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.doc-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.doc-arrow {
+  font-size: 13px;
+  color: var(--cb-blue-light);
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 13px 26px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.contact-link:hover {
+  border-color: var(--cb-blue);
+  color: var(--cb-blue-light);
+  background: var(--cb-blue-subtle);
+}
+
+.contact-link.primary {
+  background: var(--cb-blue);
+  border-color: var(--cb-blue);
+  color: white;
+}
+
+.contact-link.primary:hover {
+  background: var(--cb-blue-light);
+  border-color: var(--cb-blue-light);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 36px 80px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--dark-border);
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .principles-grid { grid-template-columns: 1fr; }
+  .wins-grid { grid-template-columns: 1fr; }
+  .case-studies { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .proof-strip { grid-template-columns: repeat(2, 1fr); }
+  .proof-cell:nth-child(4n) { border-right: 1px solid var(--dark-border); }
+  .proof-cell:nth-child(2n) { border-right: none; }
+  .proof-cell:nth-child(n+3) { border-top: 1px solid var(--dark-border); }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 14px 24px; }
+  .nav-links { display: none; }
+  .nav-mobile { display: block; }
+  
+  .hero { padding: 110px 24px 60px; }
+  
+  section { padding: 70px 24px; }
+  
+  .docs-grid { grid-template-columns: 1fr; }
+  .exp-header { flex-direction: column; }
+  .brief-box { flex-direction: column; align-items: flex-start; }
+  
+  footer { padding: 32px 24px; }
+  .proof-cell { padding: 16px 18px; }
+  .proof-value { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+  .contact-links { flex-direction: column; align-items: center; }
+}
+
+.nav-links.show {
+  display: flex !important;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: rgba(6,10,16,0.98);
+  padding: 24px;
+  gap: 20px;
+  border-bottom: 1px solid var(--dark-border);
+}
 </style>
 </head>
 <body>
 
+<!-- Navigation -->
 <nav>
-  <a href="#" class="nav-brand">ST</a>
+  <a href="#" class="nav-brand">Shaillesh Tannu</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#how-i-work">How I Work</a></li>
+    <li><a href="#wins">Signature Wins</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#skills">Expertise</a></li>
@@ -138,144 +902,419 @@ footer{padding:36px 80px;text-align:center;font-size:13px;color:var(--text-muted
   <button class="nav-mobile" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">&#9776;</button>
 </nav>
 
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-bg"></div>
   <div class="hero-content fade-in">
     <div class="hero-tag">Engineering Leadership</div>
-    <h1>I build financial systems where every dollar must be <span class="hl">accurate, auditable, and compliant.</span></h1>
-    <p class="hero-sub">Ledger platforms. Tax compliance engines. Reconciliation pipelines. Cross-border payment infrastructure. Across blockchain and traditional fintech &#8212; at NASDAQ-listed scale.</p>
-    <div class="hero-metrics">
-      <div class="metric"><div class="metric-value">18+</div><div class="metric-label">Years in Engineering</div></div>
-      <div class="metric"><div class="metric-value">10+</div><div class="metric-label">In Payments, Fintech &amp; Crypto</div></div>
-      <div class="metric"><div class="metric-value">T+1</div><div class="metric-label">Settlement from T+30</div></div>
-      <div class="metric"><div class="metric-value">99.999%</div><div class="metric-label">Uptime &middot; 100+ Currencies</div></div>
+    <h1>I build financial systems where every dollar must be <span class="highlight">accurate, auditable, and compliant.</span></h1>
+    <p class="hero-sub">Ledger platforms. Tax compliance engines. Reconciliation pipelines. Cross-border payment infrastructure. Across blockchain and traditional fintech &mdash; at NASDAQ-listed scale.</p>
+    
+    <div class="proof-strip">
+      <div class="proof-cell"><div class="proof-value"><span class="accent">18+</span> yrs</div><div class="proof-label">Engineering Leadership</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">95%</span></div><div class="proof-label">Auto-Recon &middot; 600+ Bank Accounts</div></div>
+      <div class="proof-cell"><div class="proof-value">T+30 &rarr; <span class="accent">T+1</span></div><div class="proof-label">Settlement Compression</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">99.999%</span></div><div class="proof-label">Uptime &middot; 100+ Currencies</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">350+</span></div><div class="proof-label">Fund Flows Automated</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">70M+</span></div><div class="proof-label">Users &middot; IRS Tax Reporting</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">Zero</span></div><div class="proof-label">Audit Failures &middot; SOX/SOC</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">10x</span></div><div class="proof-label">Founder Exit (Trice)</div></div>
     </div>
   </div>
 </section>
 
+<!-- About -->
 <section id="about">
   <div class="fade-in">
-    <div class="s-label">About</div>
-    <div class="s-div"></div>
-    <h2 class="s-title">Payments is where I started.<br>Financial infrastructure is what I&#8217;ve spent a decade mastering.</h2>
+    <div class="section-label">About</div>
+    <h2 class="section-title">Payments is where I started.<br>Financial infrastructure is what I&rsquo;ve spent a decade mastering.</h2>
+    <div class="section-divider"></div>
     <div class="about-content">
-      <p><strong>18+ years in engineering. 10+ across payments, fintech, and crypto.</strong> I lead teams that own mission-critical financial infrastructure &#8212; the kind where a single miscalculated entry triggers a regulatory inquiry, not just a bug ticket.</p>
-      <p>At <strong>Coinbase</strong>, I owned the ledger modernisation roadmap &#8212; automated accounting across 350+ fund flows, compressed settlement from T+30 to T+1, and built the tax engineering function from 3 to 15 engineers in a single quarter to deliver IRS digital asset reporting for 70M+ US users. I also pioneered AI-first engineering in a regulated environment &#8212; 80% of PRs authored via Claude with compliance guardrails in production.</p>
-      <p>At <strong>Nium</strong>, I grew an engineering org from 10 to 40+, delivered cross-border payment infrastructure from zero across 100+ currencies and 600+ bank accounts, and built in-house reconciliation that replaced a $250K/yr vendor &#8212; all at 99.999% uptime.</p>
-      <p>Before that, I founded <strong>Trice Technologies</strong> &#8212; an eLearning product that reached 100K+ licences and exited at 10x.</p>
-      <div class="about-callout">&#8220;I hire for judgment, coach for growth, and build environments where engineers ship with confidence in regulated environments. Every system I&#8217;ve built was designed to be audit-ready by default &#8212; not retrofitted for compliance.&#8221;</div>
+      <p><strong>18+ years in engineering. 10+ across payments, fintech, and crypto.</strong> I lead teams that own mission-critical financial infrastructure &mdash; the kind where a single miscalculated entry triggers a regulatory inquiry, not just a bug ticket.</p>
+      <p>At <strong>Coinbase</strong>, I owned the ledger modernisation roadmap &mdash; automated accounting across 350+ fund flows, compressed settlement from T+30 to T+1, and built the tax engineering function from 3 to 15 engineers in a single quarter to deliver IRS digital asset reporting for 70M+ US users. I also pioneered AI-first engineering in a regulated environment &mdash; 80% of PRs authored via Claude with compliance guardrails in production.</p>
+      <p>At <strong>Nium</strong>, I grew an engineering org from 10 to 40+, delivered cross-border payment infrastructure from zero across 100+ currencies and 600+ bank accounts, and built in-house reconciliation that replaced a $250K/yr vendor &mdash; all at 99.999% uptime, driving 85% of the company&rsquo;s global payout revenue.</p>
+      <p>Before that, I founded <strong>Trice Technologies</strong> &mdash; an eLearning product that reached 100K+ licences and exited at 10x.</p>
+      <div class="about-callout">&ldquo;I hire for judgment, coach for growth, and build environments where engineers ship with confidence in regulated environments. Every system I&rsquo;ve built was designed to be audit-ready by default &mdash; not retrofitted for compliance.&rdquo;</div>
     </div>
   </div>
 </section>
 
+<!-- How I Work -->
+<section id="how-i-work">
+  <div class="fade-in">
+    <div class="section-label">How I Work</div>
+    <h2 class="section-title">An engineer&rsquo;s brain. A human&rsquo;s heart.<br>A business mindset.</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">The systems I build are precise. The teams I build are not. People ship great work when they&rsquo;re trusted, supported, and given a clear runway &mdash; not when they&rsquo;re managed by the minute.</p>
+    
+    <div class="principles-grid">
+      <div class="principle">
+        <div class="principle-num">01 &middot; Business First</div>
+        <div class="principle-title">Engineering serves the P&amp;L &mdash; not the other way around.</div>
+        <div class="principle-body">
+          <p>Every architectural choice has a business consequence. I&rsquo;ve learned to think in revenue, regulatory risk, and time-to-value &mdash; not just system design.</p>
+          <p><strong>The best engineering decisions are the ones a CFO would also approve of.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">02 &middot; Compassion at the Core</div>
+        <div class="principle-title">Engineers ship under trust, not pressure.</div>
+        <div class="principle-body">
+          <p>I hire for judgment, coach for growth, and create environments where people can do their best work &mdash; even on regulated, mission-critical systems.</p>
+          <p><strong>The hardest problems get solved by teams that feel safe, not teams that feel watched.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">03 &middot; Detail-Oriented, Not Micro-Managing</div>
+        <div class="principle-title">I care about the details. I don&rsquo;t hover.</div>
+        <div class="principle-body">
+          <p>Data contracts, audit trails, edge cases, dollar-impact dashboards &mdash; the details matter because the consequences are regulatory. But details are the team&rsquo;s job to own.</p>
+          <p><strong>My job is to set the bar, not to inspect every line of code.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">04 &middot; Frameworks Over Heroics</div>
+        <div class="principle-title">Sustainable productivity comes from systems, not late nights.</div>
+        <div class="principle-body">
+          <p>Engineering Review Charters. OKR-driven planning. Shift-left testing. Self-serve platforms that eliminate engineering tickets entirely.</p>
+          <p><strong>The frameworks I build lifted Nium&rsquo;s engineering productivity ~30% &mdash; without burning anyone out.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">05 &middot; Roadmaps That Hold</div>
+        <div class="principle-title">Planning is a leadership act, not a deck.</div>
+        <div class="principle-body">
+          <p>Multi-year technical roadmaps that survive reorgs, leadership changes, and scope shifts. The Coinbase ledger transformation and Nium&rsquo;s reconciliation platform both took years &mdash; and held their shape because the planning was real.</p>
+          <p><strong>Predictable delivery is the goal. Not heroic recovery.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">06 &middot; Ship Calm, Ship Often</div>
+        <div class="principle-title">High-performing teams run on rhythm, not adrenaline.</div>
+        <div class="principle-body">
+          <p>Zero audit failures. 99.999% uptime. T+1 settlement. None of these were achieved through crunch &mdash; they came from clear ownership, audit-ready-by-default design, and teams that trust the system.</p>
+          <p><strong>Calm engineering isn&rsquo;t boring. It&rsquo;s how you protect billions.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Signature Wins -->
+<section id="wins" class="wins-section">
+  <div class="fade-in">
+    <div class="section-label">Signature Wins</div>
+    <h2 class="section-title">Numbers That Held Up Under Scrutiny</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Every metric below was delivered in a regulated environment, audited externally, or scaled to production. No vanity numbers.</p>
+    
+    <div class="wins-grid">
+      <div class="win-card">
+        <div class="win-headline">T+30 &rarr; T+1</div>
+        <div class="win-subhead">Settlement Compression</div>
+        <div class="win-body">Owned the ledger modernisation roadmap at Coinbase. Automated accounting across 350+ fund flows; data lands at NetSuite at T+1/T+2 with full SOX/SOC guardrails intact.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">3 &rarr; 15</div>
+        <div class="win-subhead">Tax Engineering, in One Quarter</div>
+        <div class="win-body">Tax engineering didn&rsquo;t exist at scale. Built it from 3 to 15 engineers in a single quarter to deliver IRS digital asset reporting for 70M+ US users across four parallel work streams.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">80%</div>
+        <div class="win-subhead">PRs Authored via AI</div>
+        <div class="win-body">Led AI-first engineering adoption in a regulated environment. Generative AI agents for subledger creation with compliance guardrails. AI-generated PRs for every production alert.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">10 &rarr; 40+</div>
+        <div class="win-subhead">Engineering Org, in 3 Years</div>
+        <div class="win-body">Built and scaled Nium&rsquo;s engineering organisation from 10 to 40+ &mdash; hiring tech leads, designing org structure before formal EM roles existed, owning hiring, performance, and budget.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">99.999%</div>
+        <div class="win-subhead">Uptime Across Payment Rails</div>
+        <div class="win-body">Cross-border payment infrastructure delivered from zero. 100+ currencies, 600+ bank accounts, 1,000+ customers onboarded. Drove 85% of Nium&rsquo;s global payout revenue.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">95%</div>
+        <div class="win-subhead">Auto-Reconciliation</div>
+        <div class="win-body">Reconciliation didn&rsquo;t exist in-house. Built it: 95% auto-reconciliation across 600+ bank accounts and 100+ multi-currency corridors. Replaced a $250K/yr third-party vendor.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">~40%</div>
+        <div class="win-subhead">Faster Incident Response</div>
+        <div class="win-body">Established end-to-end controls: data contracts, quarantine mechanisms, balanced-entry validations, near-real-time dollar-impact dashboards, and GL &rarr; sub-ledger lineage.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Zero</div>
+        <div class="win-subhead">Audit Failures Across SOX/SOC</div>
+        <div class="win-body">Treasury and safeguarding for all legal entities at &gt;95% accuracy. Fund segregation for crypto and fiat at 99% accuracy. Continuously audit-ready.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">~30%</div>
+        <div class="win-subhead">Engineering Productivity Lift</div>
+        <div class="win-body">Engineering Review Charter at Nium &mdash; weekly architecture reviews and POC sessions. OKR-driven planning across all six functions. Lifted productivity ~30%.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
 <section id="experience">
   <div class="fade-in">
-    <div class="s-label">Experience</div>
-    <div class="s-div"></div>
-    <h2 class="s-title">Where I&#8217;ve Built</h2>
-    <p class="s-hook">Two financial infrastructure platforms. Two regulated environments. Both built from the ground up &#8212; one in crypto, one in cross-border payments.</p>
-    <div class="exp-grid">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title">Where I&rsquo;ve Built</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Two financial infrastructure platforms. Two regulated environments. Both built from the ground up &mdash; one in crypto, one in cross-border payments.</p>
+    
+    <div class="experience-grid">
       <div class="exp-card">
-        <div class="exp-header"><div class="exp-role">Engineering Manager &#8212; Financial Platforms &amp; Tax</div><div class="exp-period">Jan 2024 &#8211; Mar 2026</div></div>
+        <div class="exp-header">
+          <div class="exp-role">Engineering Manager &mdash; Financial Platforms &amp; Tax</div>
+          <div class="exp-period">Jan 2024 &ndash; Mar 2026</div>
+        </div>
         <div class="exp-company">Coinbase &middot; NASDAQ-listed blockchain platform</div>
         <div class="exp-purpose">Lead core financial systems ensuring accuracy, auditability, and timely reporting at global scale.</div>
         <div class="exp-highlights">
-          <div class="exp-hl"><strong>Ledger &amp; Accounting:</strong> Owned the technical roadmap for ledger modernisation &#8212; automated accounting entries across 350+ fund flows. Settlement compressed from T+30 to T+1/T+2. Full SOX/SOC guardrails. Recognised with a spot bonus for go-live.</div>
-          <div class="exp-hl"><strong>Financial Accuracy:</strong> Treasury and safeguarding across all legal entities at &gt;95% accuracy. Fund segregation at 99%. Zero incidents &#8212; continuously audit-ready.</div>
-          <div class="exp-hl"><strong>Tax Compliance:</strong> Built the tax engineering team from 3 to 15 in one quarter. Delivered IRS digital asset reporting for 70M+ US users across four parallel work streams.</div>
-          <div class="exp-hl"><strong>AI in Production:</strong> Led AI-first engineering &#8212; generative AI agents for subledger creation with compliance guardrails. AI-generated PRs for every production alert. Engineers remediate, not investigate.</div>
-          <div class="exp-hl"><strong>People Leadership:</strong> Managed 20+ engineers (IC3&#8211;IC5) across US and India. Coached 3 promotions including two IC5&#8594;IC6 (Senior&#8594;Staff) &#8212; among the most competitive bars at Coinbase.</div>
+          <div class="exp-highlight"><strong>Ledger &amp; Accounting:</strong> Owned the technical roadmap for ledger modernisation &mdash; automated accounting entries across 350+ fund flows. Settlement compressed from T+30 to T+1/T+2. Full SOX/SOC guardrails. Recognised with a spot bonus for go-live.</div>
+          <div class="exp-highlight"><strong>Financial Accuracy:</strong> Treasury and safeguarding across all legal entities at &gt;95% accuracy. Fund segregation at 99%. Zero incidents &mdash; continuously audit-ready.</div>
+          <div class="exp-highlight"><strong>Self-Serve Platform:</strong> Architected a config-driven accounting model &mdash; Finance manages posting changes without engineering tickets, eliminating manual code changes entirely.</div>
+          <div class="exp-highlight"><strong>Tax Compliance:</strong> Built the tax engineering team from 3 to 15 in one quarter. Delivered IRS digital asset reporting for 70M+ US users across four parallel work streams.</div>
+          <div class="exp-highlight"><strong>AI in Production:</strong> Led AI-first engineering &mdash; generative AI agents for subledger creation with compliance guardrails. AI-generated PRs for every production alert. Engineers remediate, not investigate.</div>
+          <div class="exp-highlight"><strong>People Leadership:</strong> Managed 20+ engineers (IC3&ndash;IC5) across US and India. Coached 3 promotions including two IC5&rarr;IC6 (Senior&rarr;Staff) &mdash; among the most competitive bars at Coinbase.</div>
         </div>
-        <div class="exp-tags"><span class="exp-tag">350+ Fund Flows</span><span class="exp-tag">T+30 &#8594; T+1</span><span class="exp-tag">70M+ Users</span><span class="exp-tag">80% PRs via AI</span><span class="exp-tag">Zero Audit Failures</span></div>
+        <div class="exp-metrics">
+          <span class="exp-metric-tag">350+ Fund Flows</span>
+          <span class="exp-metric-tag">T+30 &rarr; T+1</span>
+          <span class="exp-metric-tag">70M+ Users</span>
+          <span class="exp-metric-tag">80% PRs via AI</span>
+          <span class="exp-metric-tag">Zero Audit Failures</span>
+          <span class="exp-metric-tag">~40% Faster Incident Response</span>
+        </div>
       </div>
+
       <div class="exp-card">
-        <div class="exp-header"><div class="exp-role">Director of Engineering &#8212; Cross-Border Payments &amp; Reconciliation</div><div class="exp-period">Feb 2021 &#8211; Jan 2024</div></div>
+        <div class="exp-header">
+          <div class="exp-role">Director of Engineering &mdash; Cross-Border Payments &amp; Reconciliation</div>
+          <div class="exp-period">Feb 2021 &ndash; Jan 2024</div>
+        </div>
         <div class="exp-company">Nium &middot; B2B2C cross-border payments</div>
         <div class="exp-purpose">Lead engineering for payments, reconciliation, and regulatory platforms.</div>
         <div class="exp-highlights">
-          <div class="exp-hl"><strong>Org Building:</strong> Built a 40+ person engineering organisation from 10 in 3 years &#8212; hiring tech leads, growing engineers, designing org structure before formal EM roles existed.</div>
-          <div class="exp-hl"><strong>Payments Platform:</strong> Architected API-first microservices as the shared platform for all B2B2C products &#8212; 100+ currencies globally. Drove 85% of Nium&#8217;s global payout revenue.</div>
-          <div class="exp-hl"><strong>Reconciliation:</strong> Built in-house &#8212; 95% auto-reconciliation across 600+ bank accounts and 100+ multi-currency corridors. Replaced a $250K/yr vendor.</div>
-          <div class="exp-hl"><strong>Reliability:</strong> 99.999% uptime on core payment platforms. Shift-left testing and CI/CD pipelines reduced defect discovery by ~50%.</div>
+          <div class="exp-highlight"><strong>Org Building:</strong> Built a 40+ person engineering organisation from 10 in 3 years &mdash; hiring tech leads, growing engineers, designing org structure before formal EM roles existed.</div>
+          <div class="exp-highlight"><strong>Payments Platform:</strong> Architected API-first microservices as the shared platform for all B2B2C products &mdash; 100+ currencies globally. White-label ready. 1,000+ customers onboarded. Drove 85% of Nium&rsquo;s global payout revenue.</div>
+          <div class="exp-highlight"><strong>Reconciliation:</strong> Built in-house &mdash; 95% auto-reconciliation across 600+ bank accounts and 100+ multi-currency corridors. 90% T+2 NetSuite postings. Replaced a $250K/yr vendor.</div>
+          <div class="exp-highlight"><strong>Reliability &amp; Cost:</strong> 99.999% uptime on core payment platforms. Shift-left testing and CI/CD pipelines reduced defect discovery by ~50%. Optimised AWS spend by ~16%.</div>
+          <div class="exp-highlight"><strong>Engineering Culture:</strong> Lifted productivity by ~30% via Engineering Review Charter &mdash; weekly architecture reviews and POC sessions. OKR-driven planning across six functions.</div>
         </div>
-        <div class="exp-tags"><span class="exp-tag">10 &#8594; 40+ Engineers</span><span class="exp-tag">99.999% Uptime</span><span class="exp-tag">85% Payout Revenue</span><span class="exp-tag">$250K Vendor Replaced</span></div>
+        <div class="exp-metrics">
+          <span class="exp-metric-tag">10 &rarr; 40+ Engineers</span>
+          <span class="exp-metric-tag">99.999% Uptime</span>
+          <span class="exp-metric-tag">85% Payout Revenue</span>
+          <span class="exp-metric-tag">95% Auto-Recon</span>
+          <span class="exp-metric-tag">$250K Vendor Replaced</span>
+          <span class="exp-metric-tag">~30% Productivity Lift</span>
+        </div>
       </div>
     </div>
-    <div class="earlier">
+
+    <div class="earlier-roles">
       <div class="earlier-label">Earlier Career</div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Technical Program Manager</div><div class="e-co">Nium (formerly InstaReM)</div><div class="e-detail">Shipped 0&#8594;1 reconciliation platform. 95% T+1 auto-recon across 600+ bank accounts.</div></div><div class="e-period">2019 &#8211; 2021</div></div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Technology Lead</div><div class="e-co">InstaReM (now Nium)</div><div class="e-detail">Led 4 engineers to architect reconciliation platform from scratch.</div></div><div class="e-period">2017 &#8211; 2019</div></div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Senior Software Engineer</div><div class="e-co">InstaReM (now Nium)</div><div class="e-detail">.NET &#8594; Node.js migration. 300K daily transactions.</div></div><div class="e-period">2016 &#8211; 2017</div></div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Senior Software Consultant</div><div class="e-co">ESPN</div><div class="e-detail">Global payroll platform. 43% dashboard speedup.</div></div><div class="e-period">2015 &#8211; 2016</div></div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Founder &amp; Technology Evangelist</div><div class="e-co">Trice Technologies &#8212; 10x Exit</div><div class="e-detail">eLearning product: 100K+ licences, 30+ dealerships.</div></div><div class="e-period">2009 &#8211; 2014</div></div>
-      <div class="e-role"><div class="e-info"><div class="e-title">Volunteer</div><div class="e-co">Cipla Foundation &#8212; Palliative Care</div></div><div class="e-period">2014 &#8211; 2015</div></div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Technical Program Manager</div>
+          <div class="earlier-role-company">Nium (formerly InstaReM)</div>
+          <div class="earlier-role-detail">Shipped 0&rarr;1 reconciliation platform. 95% T+1 auto-recon across 600+ bank accounts. ~70% faster audit prep.</div>
+        </div>
+        <div class="earlier-role-period">2019 &ndash; 2021</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Technology Lead</div>
+          <div class="earlier-role-company">InstaReM (now Nium)</div>
+          <div class="earlier-role-detail">Led 4 engineers to architect reconciliation platform from scratch. Replaced $250K/yr vendor.</div>
+        </div>
+        <div class="earlier-role-period">2017 &ndash; 2019</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Senior Software Engineer</div>
+          <div class="earlier-role-company">InstaReM (now Nium)</div>
+          <div class="earlier-role-detail">.NET &rarr; Node.js migration. 300K daily transactions. $100K annual savings. 50% faster KYC screening.</div>
+        </div>
+        <div class="earlier-role-period">2016 &ndash; 2017</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Senior Software Consultant</div>
+          <div class="earlier-role-company">ESPN</div>
+          <div class="earlier-role-detail">Global payroll platform (Playbook App). 43% dashboard speedup. 30% unit test coverage increase.</div>
+        </div>
+        <div class="earlier-role-period">2015 &ndash; 2016</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Founder &amp; Technology Evangelist</div>
+          <div class="earlier-role-company">Trice Technologies &mdash; 10x Exit</div>
+          <div class="earlier-role-detail">eLearning product: 100K+ licences, 30+ dealerships. Thin-client OS reducing energy costs ~80%.</div>
+        </div>
+        <div class="earlier-role-period">2009 &ndash; 2014</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Volunteer</div>
+          <div class="earlier-role-company">Cipla Foundation &mdash; Palliative Care</div>
+        </div>
+        <div class="earlier-role-period">2014 &ndash; 2015</div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Leadership Brief -->
 <section id="leadership" class="brief-section">
   <div class="fade-in">
-    <div class="s-label">Leadership Brief</div>
-    <div class="s-div"></div>
-    <h2 class="s-title">How I Lead</h2>
-    <p class="s-hook">Four case studies on building and leading engineering teams that own mission-critical financial infrastructure &#8212; from ledger transformations to cross-timezone org design.</p>
-    <div class="cases">
-      <div class="case"><div class="case-num">Case Study 01</div><div class="case-title">Owning a Company-Critical Ledger Transformation</div><div class="case-desc">How I automated accounting across 350+ fund flows and compressed settlement from T+30 to T+1 &#8212; with zero audit failures.</div></div>
-      <div class="case"><div class="case-num">Case Study 02</div><div class="case-title">Building Audit-Ready Systems That Protect $200B+</div><div class="case-desc">The controls, validations, and lineage architecture behind safeguarding $200B+ in assets &#8212; continuously audit-ready, not retrofitted.</div></div>
-      <div class="case"><div class="case-num">Case Study 03</div><div class="case-title">Scaling Engineering Teams Under Regulatory Pressure</div><div class="case-desc">Building a tax engineering function from 3 to 15 in one quarter and shipping IRS reporting for 70M+ users under a hard deadline.</div></div>
-      <div class="case"><div class="case-num">Case Study 04</div><div class="case-title">Designing the Machine That Runs a Cross-Timezone Org</div><div class="case-desc">OKR-driven planning, engineering review charters, and the coaching culture that produced Staff-level promotions across US and India.</div></div>
+    <div class="section-label">Leadership Brief</div>
+    <h2 class="section-title">How I Lead</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Four case studies on building and leading engineering teams that own mission-critical financial infrastructure &mdash; from ledger transformations to cross-timezone org design.</p>
+    
+    <div class="case-studies">
+      <div class="case-card">
+        <div class="case-number">Case Study 01</div>
+        <div class="case-title">Owning a Company-Critical Ledger Transformation</div>
+        <div class="case-desc">How I automated accounting across 350+ fund flows and compressed settlement from T+30 to T+1 &mdash; with zero audit failures.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 02</div>
+        <div class="case-title">Building Audit-Ready Systems at NASDAQ Scale</div>
+        <div class="case-desc">The controls, validations, and lineage architecture that made financial systems continuously audit-ready &mdash; not retrofitted.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 03</div>
+        <div class="case-title">Scaling Engineering Teams Under Regulatory Pressure</div>
+        <div class="case-desc">Building a tax engineering function from 3 to 15 in one quarter and shipping IRS reporting for 70M+ users under a hard deadline.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 04</div>
+        <div class="case-title">Designing the Machine That Runs a Cross-Timezone Org</div>
+        <div class="case-desc">OKR-driven planning, engineering review charters, and the coaching culture that produced Staff-level promotions across US and India.</div>
+      </div>
     </div>
-    <div class="brief-cta"><div class="brief-box"><div class="brief-box-text"><h3>Want the full leadership brief?</h3><p>Detailed case studies with context, decisions, and outcomes. Shared with recruiters and hiring managers on request.</p></div><a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&amp;body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="btn-req"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>Request Access</a></div></div>
+    
+    <div class="brief-cta">
+      <div class="brief-box">
+        <div class="brief-box-text">
+          <h3>Want the full leadership brief?</h3>
+          <p>Detailed case studies with context, decisions, and outcomes. Shared with recruiters and hiring managers on request.</p>
+        </div>
+        <a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="btn-req">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          Request Access
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Skills -->
 <section id="skills">
   <div class="fade-in">
-    <div class="s-label">Domain Expertise</div>
-    <div class="s-div"></div>
-    <h2 class="s-title">What I Bring</h2>
-    <p class="s-hook">Deep domain expertise across financial infrastructure, compliance, and engineering &#8212; not a generalist learning payments on the job.</p>
+    <div class="section-label">Domain Expertise</div>
+    <h2 class="section-title">What I Bring</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Deep domain expertise across financial infrastructure, compliance, and engineering &mdash; not a generalist learning payments on the job.</p>
+    
     <div class="skills-grid">
-      <div class="sk-group"><div class="sk-title">Financial Infrastructure</div><div class="sk-item">Ledger &amp; accounting platforms</div><div class="sk-item">Reconciliation engines</div><div class="sk-item">GL/ERP integration (NetSuite)</div><div class="sk-item">Cross-border payments</div><div class="sk-item">Digital assets &amp; blockchain</div><div class="sk-item">Stablecoin &amp; tokenization</div></div>
-      <div class="sk-group"><div class="sk-title">Compliance &amp; Regulatory</div><div class="sk-item">SOX / SOC audit readiness</div><div class="sk-item">AML/KYC frameworks</div><div class="sk-item">IRS digital asset reporting</div><div class="sk-item">PCI-DSS</div><div class="sk-item">Tax compliance at scale</div><div class="sk-item">Multi-entity / multi-currency</div></div>
-      <div class="sk-group"><div class="sk-title">Engineering &amp; AI</div><div class="sk-item">Distributed systems at scale</div><div class="sk-item">Event-driven microservices</div><div class="sk-item">Generative AI &amp; LLMs</div><div class="sk-item">AI in regulated production</div><div class="sk-item">Go, Node.js, Java, Python</div><div class="sk-item">AWS, Kubernetes, Kafka</div></div>
+      <div class="skill-group">
+        <div class="skill-group-title">Financial Infrastructure</div>
+        <div class="skill-item">Ledger &amp; accounting platforms</div>
+        <div class="skill-item">Reconciliation engines</div>
+        <div class="skill-item">GL/ERP integration (NetSuite)</div>
+        <div class="skill-item">Cross-border payments</div>
+        <div class="skill-item">Digital assets &amp; blockchain</div>
+        <div class="skill-item">Stablecoin &amp; tokenization</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Compliance &amp; Regulatory</div>
+        <div class="skill-item">SOX / SOC audit readiness</div>
+        <div class="skill-item">AML/KYC frameworks</div>
+        <div class="skill-item">IRS digital asset reporting</div>
+        <div class="skill-item">PCI-DSS</div>
+        <div class="skill-item">Tax compliance at scale</div>
+        <div class="skill-item">Multi-entity / multi-currency</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Engineering &amp; AI</div>
+        <div class="skill-item">Distributed systems at scale</div>
+        <div class="skill-item">Event-driven microservices</div>
+        <div class="skill-item">Generative AI &amp; LLMs</div>
+        <div class="skill-item">AI in regulated production</div>
+        <div class="skill-item">Go, Node.js, Java, Python</div>
+        <div class="skill-item">AWS, Kubernetes, Kafka</div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Documents -->
 <section id="documents">
   <div class="fade-in">
-    <div class="s-label">Documents</div>
-    <div class="s-div"></div>
-    <h2 class="s-title">Resume &amp; Portfolio</h2>
-    <p class="s-hook">Everything a recruiter or hiring manager needs &#8212; in one place.</p>
+    <div class="section-label">Documents</div>
+    <h2 class="section-title">Resume &amp; Portfolio</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Everything a recruiter or hiring manager needs &mdash; in one place.</p>
+    
     <div class="docs-grid">
-      <a href="https://drive.google.com/drive/folders/1Hmn7-QKs1oc01l-OoRw2pEbFEcRBoBTs?usp=share_link" target="_blank" rel="noopener" class="doc"><div class="doc-icon">&#128196;</div><div class="doc-title">Resume</div><div class="doc-desc">18+ years of engineering leadership. Detailed metrics across Coinbase, Nium, ESPN, and Trice Technologies.</div><div class="doc-arrow">View &#8594;</div></a>
-      <a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&amp;body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="doc"><div class="doc-icon">&#128274;</div><div class="doc-title">Leadership Brief</div><div class="doc-desc">Four case studies on leading financial infrastructure teams. Available on request.</div><div class="doc-arrow">Request Access &#8594;</div></a>
+      <a href="https://drive.google.com/file/d/1cnU8EySICSn8JxXmBi52B7RY9Q9Hv21m/view?usp=share_link" target="_blank" rel="noopener" class="doc-card">
+        <div class="doc-icon">&#128196;</div>
+        <div class="doc-title">Resume</div>
+        <div class="doc-desc">18+ years of engineering leadership. Detailed metrics across Coinbase, Nium, ESPN, and Trice Technologies.</div>
+        <div class="doc-arrow">View &rarr;</div>
+      </a>
+      <a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="doc-card">
+        <div class="doc-icon">&#128274;</div>
+        <div class="doc-title">Leadership Brief</div>
+        <div class="doc-desc">Four case studies on leading financial infrastructure teams. Available on request.</div>
+        <div class="doc-arrow">Request Access &rarr;</div>
+      </a>
     </div>
   </div>
 </section>
 
+<!-- Contact -->
 <section id="contact" class="contact-section">
   <div class="fade-in">
-    <div class="s-label">Get in Touch</div>
-    <div class="s-div" style="margin-left:auto;margin-right:auto"></div>
-    <h2 class="s-title">Let&#8217;s Connect</h2>
-    <p class="s-hook" style="max-width:520px;margin:0 auto 8px">Open to Senior Engineering Manager, Director of Engineering, and VP/Head of Engineering roles in fintech, payments, and crypto.</p>
+    <div class="section-label">Get in Touch</div>
+    <h2 class="section-title">Let&rsquo;s Connect</h2>
+    <div class="section-divider" style="margin-left: auto; margin-right: auto;"></div>
+    
     <div class="contact-links">
-      <a href="mailto:shailleshtannu.work@gmail.com" class="c-link primary">Email</a>
-      <a href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener" class="c-link">LinkedIn</a>
-      <a href="https://twitter.com/shailleshtannu" target="_blank" rel="noopener" class="c-link">Twitter / X</a>
+      <a href="mailto:shailleshtannu.work@gmail.com" class="contact-link primary">Email</a>
+      <a href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+      <a href="https://twitter.com/shailleshtannu" target="_blank" rel="noopener" class="contact-link">Twitter / X</a>
     </div>
   </div>
 </section>
 
-<footer><p>&copy; 2026 Shaillesh Tannu</p></footer>
+<footer>
+  <p>&copy; 2026 Shaillesh Tannu</p>
+</footer>
 
 <script>
-const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-window.addEventListener('scroll',()=>{document.querySelector('nav').style.background=window.scrollY>60?'rgba(6,10,16,0.95)':'rgba(6,10,16,0.85)'});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  nav.style.background = window.scrollY > 60 ? 'rgba(6,10,16,0.95)' : 'rgba(6,10,16,0.85)';
+});
 </script>
+
 </body>
-</html> 
+</html>

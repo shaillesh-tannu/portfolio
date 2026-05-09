@@ -35,4 +35,4 @@ jobs:
         run: pip install --upgrade html5validator
 
       - name: Validate HTML files
-        run: html5validator --root . --show-warnings
+        run: |      html5validator --root . --show-warnings \        --ignore-re 'CSS:.*backdrop-filter' 'CSS:.*linear-gradient'

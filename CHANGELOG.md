@@ -5,6 +5,22 @@ All notable changes to this site will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] — 2026-05-11
+
+### Added
+- `README.md` with project description, stack rationale, repo standards, and live CI status badge
+- Live site badge in README linking to shailleshtannu.com
+- **Content Security Policy** via `<meta http-equiv>` tag with hash-pinned inline script (defense against XSS and supply-chain attacks)
+- **Referrer-Policy** meta tag (`strict-origin-when-cross-origin`) to prevent URL leakage to external sites
+- `rel="noopener noreferrer"` on all external `target="_blank"` links (defends against tab-nabbing and prevents referrer leakage)
+
+### Changed
+- Inline `onclick` handler on mobile nav button refactored to `addEventListener` (required for strict CSP compliance)
+- HTML validation workflow now runs on every PR (was previously scoped to HTML-touching changes only — caused branch protection to deadlock on README/docs PRs)
+
+### Security
+- Site now passes a meaningful subset of common static-site security best practices: CSP with hash-pinned scripts, link safety attributes, referrer policy, and HTTPS enforcement (the last via GitHub Pages configuration)
+
 ## [1.1.0] — 2026-05-09
 
 ### Added

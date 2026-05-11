@@ -2,14 +2,9 @@ name: HTML Validation
 
 on:
   pull_request:
-    paths:
-      - '**.html'
-      - '.github/workflows/html-validation.yml'
   push:
     branches:
       - main
-    paths:
-      - '**.html'
 
 jobs:
   validate:

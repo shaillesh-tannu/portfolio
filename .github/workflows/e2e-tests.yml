@@ -1,0 +1,35 @@
+name: Site Tests
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    # ── Required status check ──
+    # To enforce this before merging: GitHub → Settings → Branches → main →
+    # Require status checks to pass → add "Run Playwright e2e tests" (exact job name).
+    name: Run Playwright e2e tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install @playwright/test
+          npx playwright install chromium --with-deps
+
+      - name: Run tests
+        run: npx playwright test

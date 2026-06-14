@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NWHDZBB875';
+      document.head.appendChild(s);
+      s.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NWHDZBB875');
+      };
+    }, 1500);
+  });
+</script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://shaillesh-chat-worker.shailleshtannu-work.workers.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaillesh Tannu — Engineering Leader | Financial Infrastructure</title>
+<meta name="description" content="Engineering leader with 18+ years in engineering, 10+ across payments, fintech, and crypto. Building financial systems where every dollar must be accurate, auditable, and compliant.">
+<meta property="og:title" content="Shaillesh Tannu — Engineering Leader | Financial Infrastructure">
+<meta property="og:description" content="Engineering leader with 18+ years in engineering, 10+ across payments, fintech, and crypto. Building financial systems where every dollar must be accurate, auditable, and compliant.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shailleshtannu.com">
+<meta property="og:image" content="https://shailleshtannu.com/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://shailleshtannu.com/og-image-v2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
+<style>
+:root {
+  --accent:          #1E9FD4;
+  --accent-hover:    #45B4E4;
+  --accent-pressed:  #1685B8;
+  --accent-soft:     rgba(30, 159, 212, 0.30);
+  --accent-glow:     rgba(30, 159, 212, 0.40);
+  --accent-contrast: #07111A;
+  --dark-bg: #060A10;
+  --dark-surface: #0B0F18;
+  --dark-card: #10151F;
+  --dark-border: rgba(255,255,255,0.06);
+  --text-primary: #E8ECF2;
+  --text-secondary: rgba(232,236,242,0.65);
+  --text-muted: rgba(232,236,242,0.38);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #5E95FF;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: rgba(6,10,16,0.85);
+  border-bottom: 1px solid var(--dark-border);
+  transition: all 0.3s ease;
+}
+
+.nav-brand {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent-hover); }
+
+.nav-mobile {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 80px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,210,150,0.04) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 820px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-soft);
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: clamp(40px, 5.5vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  letter-spacing: -1.2px;
+}
+
+.hero h1 .highlight {
+  color: var(--accent);
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.hero-latest {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 18px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  max-width: 620px;
+}
+
+.hero-latest-label {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* Proof strip - 8 metrics in 2 rows */
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  background: rgba(255,255,255,0.01);
+}
+
+.proof-cell {
+  padding: 20px 22px;
+  border-right: 1px solid var(--dark-border);
+}
+
+.proof-cell:nth-child(4n) { border-right: none; }
+.proof-cell:nth-child(n+5) { border-top: 1px solid var(--dark-border); }
+
+.proof-value {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+
+.proof-value .accent { color: var(--accent); }
+
+.proof-label {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
+
+.proof-cell-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s, opacity 0.2s;
+  opacity: 0.95;
+}
+
+.proof-cell-link::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 8px;
+  border-bottom: 1px dashed var(--accent);
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.proof-cell-link:hover {
+  opacity: 1;
+  background: var(--accent-soft);
+}
+
+.proof-cell-link:hover::after {
+  opacity: 1;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  color: #ffffff;
+  opacity: 0.4;
+  text-decoration: none;
+  animation: scroll-bounce 2s ease-in-out infinite;
+  transition: opacity 0.3s;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.8;
+}
+
+.scroll-indicator svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-indicator { animation: none; }
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 100px 80px;
+  position: relative;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.6px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+.section-hook {
+  font-size: 16.5px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+/* ===== ABOUT ===== */
+.about-content {
+  max-width: 720px;
+}
+
+.about-content p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about-callout {
+  margin-top: 36px;
+  padding: 24px 28px;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ===== HOW I WORK ===== */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1080px;
+}
+
+.principle {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 30px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.principle:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.principle-num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.principle-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+
+.principle-body {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.principle-body p { margin-bottom: 12px; }
+.principle-body p:last-child { margin-bottom: 0; }
+.principle-body strong { color: var(--text-primary); font-weight: 600; }
+
+/* ===== SIGNATURE WINS ===== */
+.wins-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.wins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+}
+
+.win-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.win-card:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.win-headline {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.win-subhead {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.win-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience-grid {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
+}
+
+.exp-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 36px;
+  position: relative;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+  border-color: var(--accent-soft);
+  box-shadow: 0 8px 40px var(--accent-glow);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-role {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.exp-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.exp-purpose {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 22px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent-soft);
+  line-height: 1.6;
+}
+
+.exp-highlights {
+  display: grid;
+  gap: 14px;
+}
+
+.exp-highlight {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding-left: 22px;
+  position: relative;
+}
+
+.exp-highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.exp-highlight strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.exp-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--dark-border);
+}
+
+.exp-metric-tag {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-soft);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ===== EARLIER CAREER ===== */
+.earlier-roles {
+  display: grid;
+  gap: 0;
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.earlier-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.earlier-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--dark-border);
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.earlier-role:first-of-type {
+  border-top: 1px solid var(--dark-border);
+}
+
+.earlier-role-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.earlier-role-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.earlier-role-company {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.earlier-role-detail {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.earlier-role-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== LEADERSHIP BRIEF ===== */
+.brief-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.case-studies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.case-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 30px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.case-card:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.case-number {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.case-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.case-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.brief-cta {
+  margin-top: 40px;
+  max-width: 900px;
+}
+
+.brief-box {
+  background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 100%);
+  border: 1px solid var(--accent-soft);
+  border-radius: 14px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brief-box h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.brief-box p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.brief-box-text {
+  max-width: 480px;
+}
+
+.btn-req {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.btn-req:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-req svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.skill-group {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.skill-group-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+.skill-item {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  line-height: 1.5;
+}
+
+.skill-item:last-child { border-bottom: none; }
+
+/* ===== DOCUMENTS ===== */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+}
+
+.doc-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color 0.3s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.doc-card:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.doc-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-soft);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.doc-title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.doc-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.doc-arrow {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.resume-embed {
+  max-width: 720px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.resume-frame {
+  width: 100%;
+  height: 680px;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.resume-frame iframe,
+.resume-frame object {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.resume-actions a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.resume-actions a:hover {
+  color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.resume-note {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* Mobile-only resume fallback (iOS Safari can't render PDF <object>) */
+.resume-mobile {
+  display: none;
+}
+
+.resume-mobile-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 32px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.resume-mobile-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.resume-mobile-dl {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  padding-bottom: 1px;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+  background: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 13px 26px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.contact-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.contact-link.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.contact-link.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 36px 80px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--dark-border);
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .principles-grid { grid-template-columns: 1fr; }
+  .wins-grid { grid-template-columns: 1fr; }
+  .case-studies { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .proof-strip { grid-template-columns: repeat(2, 1fr); }
+  .proof-cell:nth-child(4n) { border-right: 1px solid var(--dark-border); }
+  .proof-cell:nth-child(2n) { border-right: none; }
+  .proof-cell:nth-child(n+3) { border-top: 1px solid var(--dark-border); }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 14px 24px; }
+  .nav-links { display: none; }
+  .nav-mobile { display: block; }
+  
+  .hero { padding: 110px 24px 60px; }
+  
+  section { padding: 70px 24px; }
+  
+  .docs-grid { grid-template-columns: 1fr; }
+  .resume-frame { display: none; }
+  .resume-actions { display: none; }
+  .resume-note { display: none; }
+  .resume-mobile { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .exp-header { flex-direction: column; }
+  .brief-box { flex-direction: column; align-items: flex-start; }
+  
+  footer { padding: 32px 24px; }
+  .proof-cell { padding: 16px 18px; }
+  .proof-value { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+  .contact-links { flex-direction: column; align-items: center; }
+}
+
+.nav-links.show {
+  display: flex !important;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: rgba(6,10,16,0.98);
+  padding: 24px;
+  gap: 20px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 820px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item.faq-open { border-color: var(--accent-soft); }
+.faq-q-wrap { margin: 0; }
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 22px;
+  text-align: left;
+  color: var(--text-primary);
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+.faq-question:hover { color: var(--accent-hover); }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  fill: var(--accent);
+  transition: transform 0.3s ease;
+}
+.faq-item.faq-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s ease;
+}
+.faq-item.faq-open .faq-answer { grid-template-rows: 1fr; }
+.faq-answer-inner { overflow: hidden; }
+.faq-answer p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--text-secondary);
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+@media (max-width: 480px) {
+  .faq-question { font-size: 15px; padding: 18px; }
+  .faq-answer p { padding: 0 18px 18px; }
+}
+</style>
+<link rel="canonical" href="https://shailleshtannu.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shaillesh Tannu",
+      "url": "https://shailleshtannu.com",
+      "jobTitle": "Engineering Leader",
+      "description": "Engineering leader with 18+ years in engineering, 10+ across payments, fintech, and crypto.",
+      "sameAs": [
+        "https://www.linkedin.com/in/shailleshtannu",
+        "https://twitter.com/shailleshtannu"
+      ],
+      "knowsAbout": [
+        "Financial Infrastructure",
+        "Payments",
+        "Crypto",
+        "Ledger Systems",
+        "Tax Compliance",
+        "Reconciliation",
+        "Engineering Management"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does \"financial infrastructure engineering\" actually mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's the engineering behind systems where money moves and every number has to be provably correct — ledgers, reconciliation engines, settlement pipelines, and the integrations that feed accounting and tax. The bar is different from normal software: a bug here isn't a broken feature, it's a misstated balance, a failed audit, or a regulatory inquiry. I've spent a decade building exactly these systems — at Coinbase (crypto) and Nium (cross-border payments) — where \"it mostly works\" isn't good enough, because the books have to be honest down to the cent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is settlement compression, and why does T+30 → T+1 matter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Settlement is the gap between a transaction happening and the money being final and reconciled in your books. \"T+30\" means that took thirty days; \"T+1\" means one. At Coinbase I owned the ledger modernization roadmap that automated accounting across hundreds of fund flows and compressed that settlement timeline by an order of magnitude — with full SOX/SOC guardrails intact. It matters because slow settlement is a business cost, not just a technical one: capital sits unconfirmed, close takes longer, and risk hides in the gap. Faster settlement means the business sees the truth sooner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between a ledger and a reconciliation engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ledger is the source of truth — the one place where a balance is real. Everything else (dashboards, APIs, caches) is a projection of it, and the moment a projection becomes a second source of truth, you effectively have none. A reconciliation engine is the system that checks reality against that truth — matching what your bank, your processor, and your ledger each claim happened, and surfacing the mismatches. At Nium I built reconciliation in-house from zero: near-complete auto-reconciliation across hundreds of bank accounts and many currency corridors, replacing a six-figure vendor. The hard part isn't getting most of the way there — it's the last stretch, where an unexplained cent is a thread you pull until the system tells you the truth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you use AI in regulated, money-movement systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aggressively — but with humans accountable. At Coinbase I led AI-first engineering in production, not pilot: the majority of engineering work authored via AI, generative agents for subledger creation, AI-drafted PRs for production alerts so engineers remediate instead of investigate. But the guardrails are the point. You don't let AI vibe-code the systems that move customer funds. Every change passes compliance guardrails, quality gates, and human review. AI writes the code; a human still signs the SOX attestation and answers to the auditor. The acceleration is real — the accountability stays human."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you lead engineering teams in the age of AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The hard part of this job was never the technology — it's holding two things together that usually pull apart. You need the rigor to run systems where a single wrong entry is a regulatory event. And you need the trust to get a team's honest best — because in regulated finance, the engineer who's afraid to say \"I think I broke something\" is the one who causes your next audit failure. Precision without trust gives you cold rooms where nobody admits a mistake; trust without precision gives you missed standards. Both have to be true at once. I run high-trust teams because the stakes are high, not despite them — fear hides problems, and in money movement a hidden problem is the expensive kind. AI changes the tools every quarter. It doesn't change that the systems are built by people, and people do their best work when they're trusted, not watched."
+          }
+        }
+      ]
+    }
+    </script>
+    <meta name="google-site-verification" content="GZ8OyngZsetWd5luWBwWPp8cTpQOwXpQIZS2o41uW6Y" />
+<style>
+.hm-chat-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  z-index: 9999;
+  transition: background 0.2s, transform 0.2s;
+}
+.hm-chat-btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+.hm-chat-btn svg { width: 26px; height: 26px; fill: #ffffff; }
+
+.hm-chat-panel {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  width: 360px;
+  height: 480px;
+  background: #0D131C;
+  border: 1px solid rgba(30,159,212,0.30);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.hm-chat-panel.hm-open {
+  display: flex;
+  animation: hmSlideUp 0.2s ease;
+}
+@keyframes hmSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.hm-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #060A10;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(30,159,212,0.20);
+}
+.hm-chat-id { display: flex; align-items: center; gap: 10px; }
+.hm-chat-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hm-chat-title { color: #ffffff; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.hm-chat-sub { color: rgba(232,236,242,0.55); font-size: 12px; line-height: 1.3; }
+.hm-chat-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(232,236,242,0.55);
+  font-size: 24px;
+  line-height: 1;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+.hm-chat-close:hover { color: #ffffff; }
+
+.hm-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+.hm-msg {
+  max-width: 80%;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.hm-msg-user {
+  align-self: flex-end;
+  background: #1E9FD4;
+  color: #07111A;
+  border-radius: 12px 12px 2px 12px;
+}
+.hm-msg-bot {
+  align-self: flex-start;
+  background: #131C28;
+  color: #ffffff;
+  border-radius: 12px 12px 12px 2px;
+}
+.hm-typing { display: flex; gap: 5px; align-items: center; }
+.hm-typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(232,236,242,0.6);
+  animation: hmBlink 1.2s infinite;
+}
+.hm-typing span:nth-child(2) { animation-delay: 0.2s; }
+.hm-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes hmBlink { 0%, 60%, 100% { opacity: 0.25; } 30% { opacity: 1; } }
+
+.hm-chat-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(30,159,212,0.20);
+}
+.hm-chat-input input {
+  flex: 1;
+  min-width: 0;
+  background: #131C28;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13.5px;
+  outline: none;
+}
+.hm-chat-input input::placeholder { color: rgba(232,236,242,0.4); }
+.hm-chat-input input:disabled { opacity: 0.6; }
+.hm-chat-send {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.hm-chat-send:hover { background: var(--accent-hover); }
+.hm-chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+.hm-chat-send svg { width: 16px; height: 16px; fill: #07111A; }
+
+@media (max-width: 768px) {
+  .hm-chat-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    max-height: 60vh;
+    border-radius: 16px 16px 0 0;
+  }
+  /* While the keyboard is open, let the panel size to content (capped) so the
+     input stays above the keyboard rather than being pushed off-screen. */
+  .hm-chat-panel.hm-keyboard-open {
+    height: auto;
+    max-height: 60vh;
+  }
+  .hm-chat-btn { right: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#" class="nav-brand">Shaillesh Tannu</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#how-i-work">How I Work</a></li>
+    <li><a href="#wins">Signature Wins</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#skills">Expertise</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#documents">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-mobile" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Open navigation menu">&#9776;</button>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content fade-in">
+    <div class="hero-tag">Engineering Leadership</div>
+    <h1>I build financial systems where every dollar must be <span class="highlight">accurate, auditable, and compliant.</span></h1>
+    <p class="hero-sub">Ledger platforms. Tax compliance engines. Reconciliation pipelines. Cross-border payment infrastructure. Across blockchain and traditional fintech &mdash; at NASDAQ-listed scale.</p>
+    <div class="hero-latest"><span class="hero-latest-label">Latest:</span><span>IRS 1099-DA digital asset reporting for 70M+ users at Coinbase</span></div>
+
+    <div class="proof-strip">
+      <div class="proof-cell"><div class="proof-value"><span class="accent">18+</span> yrs</div><div class="proof-label">Engineering Leadership</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">Near-complete</span></div><div class="proof-label">Auto-Reconciliation</div></div>
+      <a href="#wins" class="proof-cell proof-cell-link" aria-label="Order-of-magnitude faster settlement — view Signature Wins"><div class="proof-value"><span class="accent">Order of magnitude</span></div><div class="proof-label">Faster Settlement</div></a>
+      <a href="#wins" class="proof-cell proof-cell-link" aria-label="Enterprise-grade reliability — view Signature Wins"><div class="proof-value"><span class="accent">Enterprise-grade</span></div><div class="proof-label">Reliability &middot; 100+ Currencies</div></a>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">Hundreds</span></div><div class="proof-label">Fund Flows Automated</div></div>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">70M+</span></div><div class="proof-label">Users &middot; IRS Tax Reporting</div></div>
+      <a href="#wins" class="proof-cell proof-cell-link" aria-label="Zero audit failures — view Signature Wins"><div class="proof-value"><span class="accent">Zero</span></div><div class="proof-label">Audit Failures &middot; SOX/SOC</div></a>
+      <div class="proof-cell"><div class="proof-value"><span class="accent">10x</span></div><div class="proof-label">Founder Exit (Trice)</div></div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to learn more">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 16.5a1 1 0 0 1-.71-.29l-6-6a1 1 0 1 1 1.42-1.42L12 14.09l5.29-5.3a1 1 0 1 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="fade-in">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Payments is where I started.<br>Financial infrastructure is what I&rsquo;ve spent a decade mastering.</h2>
+    <div class="section-divider"></div>
+    <div class="about-content">
+      <p><strong>18+ years in engineering. 10+ across payments, fintech, and crypto.</strong> I lead teams that own mission-critical financial infrastructure &mdash; the kind where a single miscalculated entry triggers a regulatory inquiry, not just a bug ticket.</p>
+      <p>At <strong>Coinbase</strong>, I owned the ledger modernisation roadmap &mdash; automated accounting across hundreds of fund flows, compressed settlement timelines by an order of magnitude, and rapidly scaled the tax engineering function to meet a regulatory deadline, delivering IRS digital asset reporting for 70M+ US users. I also pioneered AI-first engineering in a regulated environment &mdash; the majority of engineering work authored via Claude with compliance guardrails in production.</p>
+      <p>At <strong>Nium</strong>, I scaled an engineering org several-fold, delivered cross-border payment infrastructure from zero across 100+ currencies and hundreds of bank accounts, and built in-house reconciliation that replaced a six-figure vendor &mdash; all at enterprise-grade reliability, driving 85% of the company&rsquo;s global payout revenue.</p>
+      <p>Before that, I founded <strong>Trice Technologies</strong> &mdash; an eLearning product that reached 100K+ licences and exited at 10x.</p>
+      <div class="about-callout">&ldquo;I hire for judgment, coach for growth, and build environments where engineers ship with confidence in regulated environments. Every system I&rsquo;ve built was designed to be audit-ready by default &mdash; not retrofitted for compliance.&rdquo;</div>
+    </div>
+  </div>
+</section>
+
+<!-- How I Work -->
+<section id="how-i-work">
+  <div class="fade-in">
+    <div class="section-label">How I Work</div>
+    <h2 class="section-title">An engineer&rsquo;s brain. A human&rsquo;s heart.<br>A business mindset.</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">The systems I build are precise. The teams I build are not. People ship great work when they&rsquo;re trusted, supported, and given a clear runway &mdash; not when they&rsquo;re managed by the minute.</p>
+    
+    <div class="principles-grid">
+      <div class="principle">
+        <div class="principle-num">01 &middot; Business First</div>
+        <div class="principle-title">Engineering serves the P&amp;L &mdash; not the other way around.</div>
+        <div class="principle-body">
+          <p>Every architectural choice has a business consequence. I&rsquo;ve learned to think in revenue, regulatory risk, and time-to-value &mdash; not just system design.</p>
+          <p><strong>The best engineering decisions are the ones a CFO would also approve of.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">02 &middot; Compassion at the Core</div>
+        <div class="principle-title">Engineers ship under trust, not pressure.</div>
+        <div class="principle-body">
+          <p>I hire for judgment, coach for growth, and create environments where people can do their best work &mdash; even on regulated, mission-critical systems.</p>
+          <p><strong>The hardest problems get solved by teams that feel safe, not teams that feel watched.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">03 &middot; Detail-Oriented, Not Micro-Managing</div>
+        <div class="principle-title">I care about the details. I don&rsquo;t hover.</div>
+        <div class="principle-body">
+          <p>Data contracts, audit trails, edge cases, dollar-impact dashboards &mdash; the details matter because the consequences are regulatory. But details are the team&rsquo;s job to own.</p>
+          <p><strong>My job is to set the bar, not to inspect every line of code.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">04 &middot; Frameworks Over Heroics</div>
+        <div class="principle-title">Sustainable productivity comes from systems, not late nights.</div>
+        <div class="principle-body">
+          <p>Engineering Review Charters. OKR-driven planning. Shift-left testing. Self-serve platforms that eliminate engineering tickets entirely.</p>
+          <p><strong>The frameworks I build meaningfully lifted Nium&rsquo;s engineering throughput &mdash; without burning anyone out.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">05 &middot; Roadmaps That Hold</div>
+        <div class="principle-title">Planning is a leadership act, not a deck.</div>
+        <div class="principle-body">
+          <p>Multi-year technical roadmaps that survive reorgs, leadership changes, and scope shifts. The Coinbase ledger transformation and Nium&rsquo;s reconciliation platform both took years &mdash; and held their shape because the planning was real.</p>
+          <p><strong>Predictable delivery is the goal. Not heroic recovery.</strong></p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">06 &middot; Ship Calm, Ship Often</div>
+        <div class="principle-title">High-performing teams run on rhythm, not adrenaline.</div>
+        <div class="principle-body">
+          <p>Zero audit failures. Enterprise-grade reliability. T+1 settlement. None of these were achieved through crunch &mdash; they came from clear ownership, audit-ready-by-default design, and teams that trust the system.</p>
+          <p><strong>Calm engineering isn&rsquo;t boring. It&rsquo;s how you protect billions.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Signature Wins -->
+<section id="wins" class="wins-section">
+  <div class="fade-in">
+    <div class="section-label">Signature Wins</div>
+    <h2 class="section-title">Numbers That Held Up Under Scrutiny</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Every metric below was delivered in a regulated environment, audited externally, or scaled to production. No vanity numbers.</p>
+    
+    <div class="wins-grid">
+      <div class="win-card">
+        <div class="win-headline">Order of magnitude</div>
+        <div class="win-subhead">Settlement Compression</div>
+        <div class="win-body">Owned the ledger modernisation roadmap at Coinbase. Automated accounting across hundreds of fund flows; data lands at NetSuite at T+1/T+2 with full SOX/SOC guardrails intact.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Rapidly scaled</div>
+        <div class="win-subhead">Tax Engineering, to a Regulatory Deadline</div>
+        <div class="win-body">Tax engineering didn&rsquo;t exist at scale. Built it and rapidly scaled the team to meet a regulatory deadline, delivering IRS digital asset reporting for 70M+ US users across four parallel work streams.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Majority</div>
+        <div class="win-subhead">Engineering Work via AI</div>
+        <div class="win-body">Led AI-first engineering adoption in a regulated environment. Generative AI agents for subledger creation with compliance guardrails. AI-generated PRs for every production alert.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Several-fold</div>
+        <div class="win-subhead">Engineering Org, in 3 Years</div>
+        <div class="win-body">Built and scaled Nium&rsquo;s engineering organisation several-fold &mdash; hiring tech leads, designing org structure before formal EM roles existed, owning hiring, performance, and budget.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Enterprise-grade</div>
+        <div class="win-subhead">Reliability Across Payment Rails</div>
+        <div class="win-body">Cross-border payment infrastructure delivered from zero. 100+ currencies, hundreds of bank accounts, 1,000+ customers onboarded. Drove 85% of Nium&rsquo;s global payout revenue.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Near-complete</div>
+        <div class="win-subhead">Auto-Reconciliation</div>
+        <div class="win-body">Reconciliation didn&rsquo;t exist in-house. Built it: near-complete auto-reconciliation across hundreds of bank accounts and many multi-currency corridors. Replaced a six-figure third-party vendor.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Materially faster</div>
+        <div class="win-subhead">Incident Response</div>
+        <div class="win-body">Established end-to-end controls: data contracts, quarantine mechanisms, balanced-entry validations, near-real-time dollar-impact dashboards, and GL &rarr; sub-ledger lineage.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Zero</div>
+        <div class="win-subhead">Audit Failures Across SOX/SOC</div>
+        <div class="win-body">Treasury and safeguarding for all legal entities at consistently high accuracy. Fund segregation for crypto and fiat held to the same standard. Continuously audit-ready.</div>
+      </div>
+      <div class="win-card">
+        <div class="win-headline">Higher throughput</div>
+        <div class="win-subhead">Engineering Team Throughput</div>
+        <div class="win-body">Engineering Review Charter at Nium &mdash; weekly architecture reviews and POC sessions. OKR-driven planning across all six functions. Meaningfully lifted team throughput.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="fade-in">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title">Where I&rsquo;ve Built</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Two financial infrastructure platforms. Two regulated environments. Both built from the ground up &mdash; one in crypto, one in cross-border payments.</p>
+    
+    <div class="experience-grid">
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-role">Engineering Manager &mdash; Financial Platforms &amp; Tax</div>
+          <div class="exp-period">Jan 2024 &ndash; Mar 2026</div>
+        </div>
+        <div class="exp-company">Coinbase &middot; NASDAQ-listed blockchain platform</div>
+        <div class="exp-purpose">Led core financial systems ensuring accuracy, auditability, and timely reporting at global scale.</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight"><strong>Ledger &amp; Accounting:</strong> Owned the technical roadmap for ledger modernisation &mdash; automated accounting entries across hundreds of fund flows. Settlement compressed by an order of magnitude. Full SOX/SOC guardrails. Recognised with a spot bonus for go-live.</div>
+          <div class="exp-highlight"><strong>Financial Accuracy:</strong> Treasury and safeguarding across all legal entities at consistently high accuracy. Fund segregation held to the same standard. Zero incidents &mdash; continuously audit-ready.</div>
+          <div class="exp-highlight"><strong>Self-Serve Platform:</strong> Architected a config-driven accounting model &mdash; Finance manages posting changes without engineering tickets, eliminating manual code changes entirely.</div>
+          <div class="exp-highlight"><strong>Tax Compliance:</strong> Built and rapidly scaled the tax engineering team to meet a regulatory deadline. Delivered IRS digital asset reporting for 70M+ US users across four parallel work streams.</div>
+          <div class="exp-highlight"><strong>AI in Production:</strong> Led AI-first engineering &mdash; generative AI agents for subledger creation with compliance guardrails. AI-generated PRs for every production alert. Engineers remediate, not investigate.</div>
+          <div class="exp-highlight"><strong>People Leadership:</strong> Managed 20+ engineers (IC3&ndash;IC5) across US and India. Coached 3 promotions including two IC5&rarr;IC6 (Senior&rarr;Staff) &mdash; among the most competitive bars at Coinbase.</div>
+        </div>
+        <div class="exp-metrics">
+          <span class="exp-metric-tag">Hundreds of Fund Flows</span>
+          <span class="exp-metric-tag">Order-of-Magnitude Faster</span>
+          <span class="exp-metric-tag">70M+ Users</span>
+          <span class="exp-metric-tag">Majority of Work via AI</span>
+          <span class="exp-metric-tag">Zero Audit Failures</span>
+          <span class="exp-metric-tag">Faster Incident Response</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-role">Director of Engineering &mdash; Cross-Border Payments &amp; Reconciliation</div>
+          <div class="exp-period">Feb 2021 &ndash; Jan 2024</div>
+        </div>
+        <div class="exp-company">Nium &middot; B2B2C cross-border payments</div>
+        <div class="exp-purpose">Lead engineering for payments, reconciliation, and regulatory platforms.</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight"><strong>Org Building:</strong> Built a 40+ person engineering organisation from 10 in 3 years &mdash; hiring tech leads, growing engineers, designing org structure before formal EM roles existed.</div>
+          <div class="exp-highlight"><strong>Payments Platform:</strong> Architected API-first microservices as the shared platform for all B2B2C products &mdash; 100+ currencies globally. White-label ready. 1,000+ customers onboarded. Drove 85% of Nium&rsquo;s global payout revenue.</div>
+          <div class="exp-highlight"><strong>Reconciliation:</strong> Built in-house &mdash; near-complete auto-reconciliation across hundreds of bank accounts and many multi-currency corridors. 90% T+2 NetSuite postings. Replaced a six-figure vendor.</div>
+          <div class="exp-highlight"><strong>Reliability &amp; Cost:</strong> Enterprise-grade reliability on core payment platforms. Shift-left testing and CI/CD pipelines reduced defect discovery by ~50%. Optimised AWS spend by ~16%.</div>
+          <div class="exp-highlight"><strong>Engineering Culture:</strong> Meaningfully lifted team throughput via Engineering Review Charter &mdash; weekly architecture reviews and POC sessions. OKR-driven planning across six functions.</div>
+        </div>
+        <div class="exp-metrics">
+          <span class="exp-metric-tag">10 &rarr; 40+ Engineers</span>
+          <span class="exp-metric-tag">Enterprise-Grade Reliability</span>
+          <span class="exp-metric-tag">85% Payout Revenue</span>
+          <span class="exp-metric-tag">Near-Complete Auto-Recon</span>
+          <span class="exp-metric-tag">Six-Figure Vendor Replaced</span>
+          <span class="exp-metric-tag">Higher Team Throughput</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="earlier-roles">
+      <div class="earlier-label">Earlier Career</div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Technical Program Manager</div>
+          <div class="earlier-role-company">Nium (formerly InstaReM)</div>
+          <div class="earlier-role-detail">Shipped 0&rarr;1 reconciliation platform. Near-complete T+1 auto-recon across hundreds of bank accounts. ~70% faster audit prep.</div>
+        </div>
+        <div class="earlier-role-period">2019 &ndash; 2021</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Technology Lead</div>
+          <div class="earlier-role-company">InstaReM (now Nium)</div>
+          <div class="earlier-role-detail">Led 4 engineers to architect reconciliation platform from scratch. Replaced a six-figure vendor.</div>
+        </div>
+        <div class="earlier-role-period">2017 &ndash; 2019</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Senior Software Engineer</div>
+          <div class="earlier-role-company">InstaReM (now Nium)</div>
+          <div class="earlier-role-detail">.NET &rarr; Node.js migration. 300K daily transactions. $100K annual savings. 50% faster KYC screening.</div>
+        </div>
+        <div class="earlier-role-period">2016 &ndash; 2017</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Senior Software Consultant</div>
+          <div class="earlier-role-company">ESPN</div>
+          <div class="earlier-role-detail">Global payroll platform (Playbook App). 43% dashboard speedup. 30% unit test coverage increase.</div>
+        </div>
+        <div class="earlier-role-period">2015 &ndash; 2016</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Founder &amp; Technology Evangelist</div>
+          <div class="earlier-role-company">Trice Technologies &mdash; 10x Exit</div>
+          <div class="earlier-role-detail">eLearning product: 100K+ licences, 30+ dealerships. Thin-client OS reducing energy costs substantially.</div>
+        </div>
+        <div class="earlier-role-period">2009 &ndash; 2014</div>
+      </div>
+      <div class="earlier-role">
+        <div class="earlier-role-info">
+          <div class="earlier-role-title">Volunteer</div>
+          <div class="earlier-role-company">Cipla Foundation &mdash; Palliative Care</div>
+        </div>
+        <div class="earlier-role-period">2014 &ndash; 2015</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Brief -->
+<section id="leadership" class="brief-section">
+  <div class="fade-in">
+    <div class="section-label">Leadership Brief</div>
+    <h2 class="section-title">How I Lead</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Four case studies on building and leading engineering teams that own mission-critical financial infrastructure &mdash; from ledger transformations to cross-timezone org design.</p>
+    
+    <div class="case-studies">
+      <div class="case-card">
+        <div class="case-number">Case Study 01</div>
+        <div class="case-title">Owning a Company-Critical Ledger Transformation</div>
+        <div class="case-desc">How I automated accounting across hundreds of fund flows and compressed settlement timelines by an order of magnitude &mdash; with zero audit failures.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 02</div>
+        <div class="case-title">Building Audit-Ready Systems at NASDAQ Scale</div>
+        <div class="case-desc">The controls, validations, and lineage architecture that made financial systems continuously audit-ready &mdash; not retrofitted.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 03</div>
+        <div class="case-title">Scaling Engineering Teams Under Regulatory Pressure</div>
+        <div class="case-desc">Building and rapidly scaling a tax engineering function to meet a regulatory deadline and shipping IRS reporting for 70M+ users.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-number">Case Study 04</div>
+        <div class="case-title">Designing the Machine That Runs a Cross-Timezone Org</div>
+        <div class="case-desc">OKR-driven planning, engineering review charters, and the coaching culture that produced Staff-level promotions across US and India.</div>
+      </div>
+    </div>
+    
+    <div class="brief-cta">
+      <div class="brief-box">
+        <div class="brief-box-text">
+          <h3>Want the full leadership brief?</h3>
+          <p>Detailed case studies with context, decisions, and outcomes.</p>
+        </div>
+        <a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="btn-req">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          Request Access
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="fade-in">
+    <div class="section-label">Domain Expertise</div>
+    <h2 class="section-title">What I Bring</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Deep domain expertise across financial infrastructure, compliance, and engineering &mdash; not a generalist learning payments on the job.</p>
+    
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">Financial Infrastructure</div>
+        <div class="skill-item">Ledger &amp; accounting platforms</div>
+        <div class="skill-item">Reconciliation engines</div>
+        <div class="skill-item">GL/ERP integration (NetSuite)</div>
+        <div class="skill-item">Cross-border payments</div>
+        <div class="skill-item">Digital assets &amp; blockchain</div>
+        <div class="skill-item">Stablecoin &amp; tokenization</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Compliance &amp; Regulatory</div>
+        <div class="skill-item">SOX / SOC audit readiness</div>
+        <div class="skill-item">AML/KYC frameworks</div>
+        <div class="skill-item">IRS digital asset reporting</div>
+        <div class="skill-item">PCI-DSS</div>
+        <div class="skill-item">Tax compliance at scale</div>
+        <div class="skill-item">Multi-entity / multi-currency</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Engineering &amp; AI</div>
+        <div class="skill-item">Distributed systems at scale</div>
+        <div class="skill-item">Event-driven microservices</div>
+        <div class="skill-item">Generative AI &amp; LLMs</div>
+        <div class="skill-item">AI in regulated production</div>
+        <div class="skill-item">Go, Node.js, Java, Python</div>
+        <div class="skill-item">AWS, Kubernetes, Kafka</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="fade-in">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">Questions I Get Asked</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Straight answers on the systems, the domain, and leading engineering in the AI era.</p>
+
+    <div class="faq-list">
+      <div class="faq-item" data-faq-id="financial-infrastructure">
+        <h3 class="faq-q-wrap">
+          <button type="button" class="faq-question" id="faq-q-financial-infrastructure" aria-expanded="false" aria-controls="faq-a-financial-infrastructure">
+            <span>What does "financial infrastructure engineering" actually mean?</span>
+            <svg class="faq-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+        </h3>
+        <div class="faq-answer" id="faq-a-financial-infrastructure" role="region" aria-labelledby="faq-q-financial-infrastructure">
+          <div class="faq-answer-inner">
+            <p>It's the engineering behind systems where money moves and every number has to be provably correct — ledgers, reconciliation engines, settlement pipelines, and the integrations that feed accounting and tax. The bar is different from normal software: a bug here isn't a broken feature, it's a misstated balance, a failed audit, or a regulatory inquiry. I've spent a decade building exactly these systems — at Coinbase (crypto) and Nium (cross-border payments) — where "it mostly works" isn't good enough, because the books have to be honest down to the cent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-id="settlement-compression">
+        <h3 class="faq-q-wrap">
+          <button type="button" class="faq-question" id="faq-q-settlement-compression" aria-expanded="false" aria-controls="faq-a-settlement-compression">
+            <span>What is settlement compression, and why does T+30 → T+1 matter?</span>
+            <svg class="faq-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+        </h3>
+        <div class="faq-answer" id="faq-a-settlement-compression" role="region" aria-labelledby="faq-q-settlement-compression">
+          <div class="faq-answer-inner">
+            <p>Settlement is the gap between a transaction happening and the money being final and reconciled in your books. "T+30" means that took thirty days; "T+1" means one. At Coinbase I owned the ledger modernization roadmap that automated accounting across hundreds of fund flows and compressed that settlement timeline by an order of magnitude — with full SOX/SOC guardrails intact. It matters because slow settlement is a business cost, not just a technical one: capital sits unconfirmed, close takes longer, and risk hides in the gap. Faster settlement means the business sees the truth sooner.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-id="ledger-vs-reconciliation">
+        <h3 class="faq-q-wrap">
+          <button type="button" class="faq-question" id="faq-q-ledger-vs-reconciliation" aria-expanded="false" aria-controls="faq-a-ledger-vs-reconciliation">
+            <span>What's the difference between a ledger and a reconciliation engine?</span>
+            <svg class="faq-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+        </h3>
+        <div class="faq-answer" id="faq-a-ledger-vs-reconciliation" role="region" aria-labelledby="faq-q-ledger-vs-reconciliation">
+          <div class="faq-answer-inner">
+            <p>A ledger is the source of truth — the one place where a balance is real. Everything else (dashboards, APIs, caches) is a projection of it, and the moment a projection becomes a second source of truth, you effectively have none. A reconciliation engine is the system that checks reality against that truth — matching what your bank, your processor, and your ledger each claim happened, and surfacing the mismatches. At Nium I built reconciliation in-house from zero: near-complete auto-reconciliation across hundreds of bank accounts and many currency corridors, replacing a six-figure vendor. The hard part isn't getting most of the way there — it's the last stretch, where an unexplained cent is a thread you pull until the system tells you the truth.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-id="ai-in-money-movement">
+        <h3 class="faq-q-wrap">
+          <button type="button" class="faq-question" id="faq-q-ai-in-money-movement" aria-expanded="false" aria-controls="faq-a-ai-in-money-movement">
+            <span>How do you use AI in regulated, money-movement systems?</span>
+            <svg class="faq-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+        </h3>
+        <div class="faq-answer" id="faq-a-ai-in-money-movement" role="region" aria-labelledby="faq-q-ai-in-money-movement">
+          <div class="faq-answer-inner">
+            <p>Aggressively — but with humans accountable. At Coinbase I led AI-first engineering in production, not pilot: the majority of engineering work authored via AI, generative agents for subledger creation, AI-drafted PRs for production alerts so engineers remediate instead of investigate. But the guardrails are the point. You don't let AI vibe-code the systems that move customer funds. Every change passes compliance guardrails, quality gates, and human review. AI writes the code; a human still signs the SOX attestation and answers to the auditor. The acceleration is real — the accountability stays human.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-id="leading-in-ai-era">
+        <h3 class="faq-q-wrap">
+          <button type="button" class="faq-question" id="faq-q-leading-in-ai-era" aria-expanded="false" aria-controls="faq-a-leading-in-ai-era">
+            <span>How do you lead engineering teams in the age of AI?</span>
+            <svg class="faq-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+        </h3>
+        <div class="faq-answer" id="faq-a-leading-in-ai-era" role="region" aria-labelledby="faq-q-leading-in-ai-era">
+          <div class="faq-answer-inner">
+            <p>The hard part of this job was never the technology — it's holding two things together that usually pull apart. You need the rigor to run systems where a single wrong entry is a regulatory event. And you need the trust to get a team's honest best — because in regulated finance, the engineer who's afraid to say "I think I broke something" is the one who causes your next audit failure. Precision without trust gives you cold rooms where nobody admits a mistake; trust without precision gives you missed standards. Both have to be true at once. I run high-trust teams because the stakes are high, not despite them — fear hides problems, and in money movement a hidden problem is the expensive kind. AI changes the tools every quarter. It doesn't change that the systems are built by people, and people do their best work when they're trusted, not watched.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Documents -->
+<section id="documents">
+  <div class="fade-in">
+    <div class="section-label">Documents</div>
+    <h2 class="section-title">Resume &amp; Portfolio</h2>
+    <div class="section-divider"></div>
+    
+    <div class="docs-grid">
+      <a href="mailto:shailleshtannu.work@gmail.com?subject=R%C3%A9sum%C3%A9%20request%20%E2%80%94%20Shaillesh%20Tannu&body=Hi%20Shaillesh%2C%20I%27d%20like%20to%20request%20a%20copy%20of%20your%20r%C3%A9sum%C3%A9.%20%5BPlease%20share%20who%20you%20are%20and%20the%20role%2Fcontext.%5D" class="doc-card">
+        <div class="doc-icon">&#128196;</div>
+        <div class="doc-title">R&eacute;sum&eacute;</div>
+        <div class="doc-desc">18+ years of engineering leadership. Detailed metrics across Coinbase, Nium, ESPN, and Trice Technologies.</div>
+        <div class="doc-arrow">Request the r&eacute;sum&eacute; &rarr;</div>
+      </a>
+      <a href="mailto:shailleshtannu.work@gmail.com?subject=Request%3A%20Leadership%20Brief%20%E2%80%94%20Shaillesh%20Tannu&body=Hi%20Shaillesh%2C%0A%0AI%E2%80%99d%20like%20to%20request%20access%20to%20your%20leadership%20brief.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0ARole%2FContext%3A%20%0A%0AThanks!" class="doc-card">
+        <div class="doc-icon">&#128274;</div>
+        <div class="doc-title">Leadership Brief</div>
+        <div class="doc-desc">Four case studies on leading financial infrastructure teams. Available on request.</div>
+        <div class="doc-arrow">Request Access &rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="fade-in">
+    <div class="section-label">Get in Touch</div>
+    <h2 class="section-title">Let&rsquo;s Connect</h2>
+    <div class="section-divider" style="margin-left: auto; margin-right: auto;"></div>
+    
+    <div class="contact-links">
+      <a href="mailto:shailleshtannu.work@gmail.com" class="contact-link primary">Email</a>
+      <a href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+      <a href="https://twitter.com/shailleshtannu" target="_blank" rel="noopener noreferrer" class="contact-link">Twitter / X</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Shaillesh Tannu</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  nav.style.background = window.scrollY > 60 ? 'rgba(6,10,16,0.95)' : 'rgba(6,10,16,0.85)';
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  function fire(name, params) {
+    if (typeof gtag === 'function') { gtag('event', name, params || {}); }
+  }
+
+  /* ── PART 1 & 5 — Click events (delegated, first-match-wins) ── */
+  document.body.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link) { return; }
+    var href = link.getAttribute('href') || '';
+
+    // 1. resume_download — any link containing "export=download"
+    if (href.indexOf('export=download') !== -1) {
+      fire('resume_download', { link_url: href });
+      return;
+    }
+    // 2. resume_view — drive.google.com/file/ link that is not a download
+    if (href.indexOf('drive.google.com/file/') !== -1) {
+      fire('resume_view', { link_url: href });
+      return;
+    }
+    // 3. leadership_brief_request — mailto whose href contains "Leadership%20Brief"
+    if (href.indexOf('mailto:') === 0 && href.indexOf('Leadership%20Brief') !== -1) {
+      fire('leadership_brief_request', {});
+      return;
+    }
+    // 3b. resume_request — the request-only résumé mailto
+    if (href.indexOf('mailto:') === 0 && href.indexOf('request%20a%20copy') !== -1) {
+      fire('resume_request', {});
+      return;
+    }
+    // 4. contact_click — any link inside the #contact section
+    if (link.closest('#contact')) {
+      var platform = '';
+      if (href.indexOf('mailto:') === 0) { platform = 'email'; }
+      else if (href.indexOf('linkedin.com') !== -1) { platform = 'linkedin'; }
+      else if (href.indexOf('twitter.com') !== -1 || href.indexOf('x.com') !== -1) { platform = 'twitter'; }
+      fire('contact_click', { link_url: href, platform: platform });
+      return;
+    }
+    // 5. outbound_click — external http(s) link to a different host
+    if (/^https?:\/\//i.test(href) && link.hostname && link.hostname !== location.hostname) {
+      var text = (link.innerText || link.textContent || '').trim().substring(0, 50);
+      fire('outbound_click', { link_url: href, link_text: text });
+      return;
+    }
+  });
+
+  /* ── PART 2 — Section read tracking ── */
+  var SECTION_NAMES = {
+    'about': 'About',
+    'how-i-work': 'How I Work',
+    'wins': 'Signature Wins',
+    'experience': 'Experience',
+    'leadership': 'Leadership Brief',
+    'skills': 'Domain Expertise',
+    'faq': 'FAQ',
+    'documents': 'Resume & Portfolio',
+    'contact': 'Contact'
+  };
+
+  var targets = [];
+  var heroEl = document.querySelector('.hero')
+    || document.querySelector('section')
+    || (document.querySelector('h1') && document.querySelector('h1').closest('section'));
+  if (heroEl) { targets.push({ el: heroEl, id: 'hero', name: 'Hero' }); }
+  Object.keys(SECTION_NAMES).forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) { targets.push({ el: el, id: id, name: SECTION_NAMES[id] }); }
+  });
+
+  if (targets.length && 'IntersectionObserver' in window) {
+    var firedSections = new Set();
+    var elMap = new Map();
+    targets.forEach(function (t) { elMap.set(t.el, t); });
+
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) { return; }
+        var t = elMap.get(entry.target);
+        if (t && !firedSections.has(t.id)) {
+          firedSections.add(t.id);
+          fire('section_view', { section_id: t.id, section_name: t.name });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    targets.forEach(function (t) { sectionObserver.observe(t.el); });
+  }
+
+  /* ── PART 3 — Scroll depth ── */
+  var depths = [25, 50, 75, 100];
+  var firedDepths = new Set();
+  var depthTicking = false;
+
+  function checkScrollDepth() {
+    depthTicking = false;
+    var docEl = document.documentElement;
+    var scrollTop = window.pageYOffset || docEl.scrollTop || 0;
+    var viewportHeight = window.innerHeight || docEl.clientHeight || 0;
+    var documentHeight = docEl.scrollHeight || 1;
+    var percent = (scrollTop + viewportHeight) / documentHeight * 100;
+    depths.forEach(function (d) {
+      if (percent >= d && !firedDepths.has(d)) {
+        firedDepths.add(d);
+        fire('scroll_depth', { percent: d });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!depthTicking) {
+      depthTicking = true;
+      window.requestAnimationFrame(checkScrollDepth);
+    }
+  }, { passive: true });
+  checkScrollDepth();
+
+  /* ── PART 4 — Engaged time (visibility-aware) ── */
+  var engagedThresholds = [30, 60, 120];
+  var engagedIdx = 0;
+  var engagedAccrued = 0;   // visible seconds counted so far
+  var engagedStart = null;  // timestamp of current visible run
+  var engagedTimer = null;
+
+  function scheduleEngaged() {
+    if (engagedIdx >= engagedThresholds.length) { return; }
+    if (document.visibilityState !== 'visible') { return; }
+    var remainingMs = (engagedThresholds[engagedIdx] - engagedAccrued) * 1000;
+    engagedStart = Date.now();
+    engagedTimer = setTimeout(function () {
+      engagedAccrued = engagedThresholds[engagedIdx];
+      fire('engaged_time', { seconds: engagedThresholds[engagedIdx] });
+      engagedIdx++;
+      engagedStart = Date.now();
+      scheduleEngaged();
+    }, Math.max(0, remainingMs));
+  }
+
+  function pauseEngaged() {
+    if (engagedTimer) { clearTimeout(engagedTimer); engagedTimer = null; }
+    if (engagedStart !== null) {
+      engagedAccrued += (Date.now() - engagedStart) / 1000;
+      engagedStart = null;
+    }
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') { scheduleEngaged(); }
+    else { pauseEngaged(); }
+  });
+  if (document.visibilityState === 'visible') { scheduleEngaged(); }
+
+  /* ── FAQ accordion + faq_open tracking ── */
+  var faqOpened = new Set();
+  var faqButtons = document.querySelectorAll('.faq-question');
+  faqButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var item = button.closest('.faq-item');
+      if (!item) { return; }
+      var expanded = button.getAttribute('aria-expanded') === 'true';
+      var nowOpen = !expanded;
+      button.setAttribute('aria-expanded', nowOpen ? 'true' : 'false');
+      item.classList.toggle('faq-open', nowOpen);
+      if (nowOpen) {
+        var qid = item.getAttribute('data-faq-id');
+        if (qid && !faqOpened.has(qid)) {
+          faqOpened.add(qid);
+          fire('faq_open', { question_id: qid });
+        }
+      }
+    });
+  });
+
+});
+</script>
+
+<!-- ===== Hiring Manager Chat Widget ===== -->
+<button type="button" class="hm-chat-btn" id="hmChatBtn" aria-label="Ask about Shaillesh">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM7 9h10v2H7V9zm6 5H7v-2h6v2zm4-6H7V6h10v2z"/></svg>
+</button>
+
+<div class="hm-chat-panel" id="hmChatPanel" role="dialog" aria-label="Chat with Shaillesh's assistant">
+  <div class="hm-chat-header">
+    <div class="hm-chat-id">
+      <div class="hm-chat-avatar">ST</div>
+      <div>
+        <div class="hm-chat-title">Ask about Shaillesh</div>
+        <div class="hm-chat-sub">Powered by Claude</div>
+      </div>
+    </div>
+    <button type="button" class="hm-chat-close" id="hmChatClose" aria-label="Close chat">&times;</button>
+  </div>
+  <div class="hm-chat-messages" id="hmChatMessages"></div>
+  <form class="hm-chat-input" id="hmChatForm">
+    <input type="text" id="hmChatInput" aria-label="Type your question" placeholder="Ask a question..." maxlength="500" autocomplete="off">
+    <button type="submit" class="hm-chat-send" id="hmChatSend" aria-label="Send message">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5v-6l8-2.5-8-2.5v-6l19 8.5z"/></svg>
+    </button>
+  </form>
+</div>
+
+<script>
+(function () {
+  var WORKER_URL = 'https://shaillesh-chat-worker.shailleshtannu-work.workers.dev';
+  var OPENING = "Hi! I can answer questions about Shaillesh's experience, leadership approach, and domain expertise. What would you like to know?";
+  var GENERIC_ERR = "Sorry, something went wrong. Please try again.";
+  var RATE_ERR = "You've reached the daily limit. Please check back tomorrow.";
+
+  var btn = document.getElementById('hmChatBtn');
+  var panel = document.getElementById('hmChatPanel');
+  var closeBtn = document.getElementById('hmChatClose');
+  var form = document.getElementById('hmChatForm');
+  var input = document.getElementById('hmChatInput');
+  var sendBtn = document.getElementById('hmChatSend');
+  var messages = document.getElementById('hmChatMessages');
+
+  var greeted = false;
+  var busy = false;
+
+  /* Mobile keyboard handling (iOS Safari): when the on-screen keyboard opens
+     it can push the position:fixed panel out of the visible viewport. On mobile
+     the panel is a bottom-anchored sheet sized with vh (see CSS); while the
+     input is focused we let it size to content (capped at 60vh) and keep the
+     latest message in view after the keyboard animation settles. */
+  var mobileMQ = window.matchMedia('(max-width: 768px)');
+
+  function onInputFocus() {
+    if (mobileMQ.matches) { panel.classList.add('hm-keyboard-open'); }
+    setTimeout(function () { messages.scrollTop = messages.scrollHeight; }, 300);
+  }
+
+  function onInputBlur() {
+    panel.classList.remove('hm-keyboard-open');
+  }
+
+  function track(name, params) {
+    if (typeof gtag === 'function') { gtag('event', name, params || {}); }
+  }
+
+  function scrollDown() { messages.scrollTop = messages.scrollHeight; }
+
+  function addMessage(text, who) {
+    var el = document.createElement('div');
+    el.className = 'hm-msg ' + (who === 'user' ? 'hm-msg-user' : 'hm-msg-bot');
+    el.textContent = text;
+    messages.appendChild(el);
+    scrollDown();
+  }
+
+  function showTyping() {
+    var el = document.createElement('div');
+    el.className = 'hm-msg hm-msg-bot hm-typing';
+    el.setAttribute('data-hm-typing', '1');
+    el.innerHTML = '<span></span><span></span><span></span>';
+    messages.appendChild(el);
+    scrollDown();
+  }
+
+  function removeTyping() {
+    var t = messages.querySelector('[data-hm-typing]');
+    if (t) { messages.removeChild(t); }
+  }
+
+  function setBusy(state) {
+    busy = state;
+    input.disabled = state;
+    sendBtn.disabled = state;
+  }
+
+  function openPanel() {
+    panel.classList.add('hm-open');
+    if (!greeted) { addMessage(OPENING, 'bot'); greeted = true; }
+    track('chatbot_opened');
+    setTimeout(function () { input.focus(); }, 60);
+  }
+
+  function closePanel() { panel.classList.remove('hm-open'); panel.classList.remove('hm-keyboard-open'); }
+
+  btn.addEventListener('click', function () {
+    if (panel.classList.contains('hm-open')) { closePanel(); } else { openPanel(); }
+  });
+  closeBtn.addEventListener('click', closePanel);
+
+  input.addEventListener('focus', onInputFocus);
+  input.addEventListener('blur', onInputBlur);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (busy) { return; }
+    var text = input.value.trim();
+    if (!text) { return; }
+
+    addMessage(text, 'user');
+    track('chatbot_question_asked', { question_length: text.length });
+    input.value = '';
+    setBusy(true);
+    showTyping();
+
+    fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text })
+    }).then(function (res) {
+      if (res.status === 429) { var rl = new Error('rate'); rl.code = 429; throw rl; }
+      if (!res.ok) { var he = new Error('http'); he.code = res.status; throw he; }
+      return res.json();
+    }).then(function (data) {
+      removeTyping();
+      addMessage(data && data.answer ? data.answer : GENERIC_ERR, 'bot');
+    }).catch(function (err) {
+      removeTyping();
+      if (err && err.code === 429) {
+        addMessage(RATE_ERR, 'bot');
+      } else {
+        addMessage(GENERIC_ERR, 'bot');
+        track('chatbot_error', {});
+      }
+    }).then(function () {
+      setBusy(false);
+      input.focus();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

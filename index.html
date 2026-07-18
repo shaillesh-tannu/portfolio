@@ -844,6 +844,24 @@ section {
   max-width: 600px;
 }
 
+/* ===== POSTS ===== */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+}
+.post-card {
+  display: block;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.2s;
+}
+.post-card:hover { border-color: var(--accent-soft); transform: translateY(-2px); }
+.post-card img { width: 100%; height: auto; display: block; }
+
 .doc-card {
   background: var(--dark-card);
   border: 1px solid var(--dark-border);
@@ -1066,6 +1084,7 @@ footer {
   section { padding: 70px 24px; }
   
   .docs-grid { grid-template-columns: 1fr; }
+  .posts-grid { grid-template-columns: repeat(2, 1fr); }
   .resume-frame { display: none; }
   .resume-actions { display: none; }
   .resume-note { display: none; }
@@ -1430,6 +1449,7 @@ footer {
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#skills">Expertise</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="#posts">Posts</a></li>
     <li><a href="#documents">Resume</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -1876,6 +1896,92 @@ footer {
   </div>
 </section>
 
+<!-- Posts -->
+<section id="posts">
+  <div class="fade-in">
+    <div class="section-label">Writing</div>
+    <h2 class="section-title">The Settlement Stack</h2>
+    <div class="section-divider"></div>
+    <p class="section-hook">Field notes on financial infrastructure &mdash; settlement, ledgers, reconciliation, and the systems beneath every dollar that moves.</p>
+
+    <!-- Each card links to the LinkedIn profile as a placeholder; replace individual hrefs with the specific post permalinks. -->
+    <div class="posts-grid">
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Agents can spend settling another story">
+          <img src="cards/agents-can-spend-settling-another-story.png" alt="The Settlement Stack — Agents can spend settling another story" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Antipattern at 40">
+          <img src="cards/antipattern-at-40.png" alt="The Settlement Stack — Antipattern at 40" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Bookkeeping pipeline">
+          <img src="cards/bookkeeping-pipeline.png" alt="The Settlement Stack — Bookkeeping pipeline" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Genius act yield">
+          <img src="cards/card-T10-genius-act-yield.png" alt="The Settlement Stack — Genius act yield" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Dispute model from 1970s">
+          <img src="cards/card-T11-dispute-model-from-1970s.png" alt="The Settlement Stack — Dispute model from 1970s" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Event stream not a ledger">
+          <img src="cards/card-T3-event-stream-not-a-ledger.png" alt="The Settlement Stack — Event stream not a ledger" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Lose an audit 2026">
+          <img src="cards/card-T34-lose-an-audit-2026.png" alt="The Settlement Stack — Lose an audit 2026" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Agent cant open bank account">
+          <img src="cards/card-T40-agent-cant-open-bank-account.png" alt="The Settlement Stack — Agent cant open bank account" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Feedback loop days to months">
+          <img src="cards/card-T45-feedback-loop-days-to-months.png" alt="The Settlement Stack — Feedback loop days to months" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Stablecoin volume reality">
+          <img src="cards/card-T58-stablecoin-volume-reality.png" alt="The Settlement Stack — Stablecoin volume reality" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Real time liquidity bill">
+          <img src="cards/card-T59-real-time-liquidity-bill.png" alt="The Settlement Stack — Real time liquidity bill" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Correctness under scale">
+          <img src="cards/card-T6-correctness-under-scale.png" alt="The Settlement Stack — Correctness under scale" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Faster settlement made recon harder">
+          <img src="cards/faster-settlement-made-recon-harder.png" alt="The Settlement Stack — Faster settlement made recon harder" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Fastest teams identify who decides">
+          <img src="cards/fastest-teams-identify-who-decides.png" alt="The Settlement Stack — Fastest teams identify who decides" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Infrastructure nobody sees">
+          <img src="cards/infrastructure-nobody-sees.png" alt="The Settlement Stack — Infrastructure nobody sees" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Interface is what you see">
+          <img src="cards/interface-is-what-you-see.png" alt="The Settlement Stack — Interface is what you see" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Ledger is the source of truth">
+          <img src="cards/ledger-is-the-source-of-truth.png" alt="The Settlement Stack — Ledger is the source of truth" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Most expensive casual decision">
+          <img src="cards/most-expensive-casual-decision.png" alt="The Settlement Stack — Most expensive casual decision" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Nobody watches the reconciliation">
+          <img src="cards/nobody-watches-the-reconciliation.png" alt="The Settlement Stack — Nobody watches the reconciliation" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Only operational evidence counts">
+          <img src="cards/only-operational-evidence-counts.png" alt="The Settlement Stack — Only operational evidence counts" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Plumbing not price">
+          <img src="cards/plumbing-not-price.png" alt="The Settlement Stack — Plumbing not price" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Prefunding is trapped capital">
+          <img src="cards/prefunding-is-trapped-capital.png" alt="The Settlement Stack — Prefunding is trapped capital" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — The unexplained cent">
+          <img src="cards/the-unexplained-cent.png" alt="The Settlement Stack — The unexplained cent" loading="lazy">
+        </a>
+        <a class="post-card" href="https://www.linkedin.com/in/shailleshtannu" target="_blank" rel="noopener noreferrer" aria-label="The Settlement Stack — Up is not the same as correct">
+          <img src="cards/up-is-not-the-same-as-correct.png" alt="The Settlement Stack — Up is not the same as correct" loading="lazy">
+        </a>
+    </div>
+  </div>
+</section>
+
 <!-- Documents -->
 <section id="documents">
   <div class="fade-in">
@@ -1995,6 +2101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'leadership': 'Leadership Brief',
     'skills': 'Domain Expertise',
     'faq': 'FAQ',
+    'posts': 'Posts',
     'documents': 'Resume & Portfolio',
     'contact': 'Contact'
   };
